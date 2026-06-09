@@ -1,0 +1,36 @@
+SOURCE: https://ovis-intl.dartmouth.edu/immigration/f-1-students/employment/stem-optional-practical-training-opt/application-process
+FILENAME: work_auth_dartmouth_stem_opt_apply.txt
+
+F-1 Students
+Application Process
+Overview
+After receiving a STEM OPT recommendation from OVIS, you may submit the STEM OPT extension to USCIS up to 90 days before your Post-Completion OPT period expires.  Your STEM OPT application must be received by USCIS before your Post-Completion OPT expires.
+
+Timely filing of the STEM OPT application automatically extends your work authorization in the U.S. for 180 days beyond the expiration of your OPT, or until a final decision is made on the STEM OPT application. 
+
+While your STEM OPT application remains pending, you should not travel outside the U.S. if your Post-Completion OPT has already expired or will expire during your trip abroad. 
+
+Steps for Applying:
+Review the OVIS STEM OPT Workshop on Canvas. You can self-enroll in the course here.
+ 
+Go to iDartmouth to complete the STEM OPT Extension Request e-form for OVIS. Read all e-form instructions carefully. 
+ 
+Upload requested documents, including the completed and signed Form I-983 STEM OPT Training Plan
+Notes:
+I-983 pg. 2 "Start Date of Employment": this is the start of your STEM extension unless your job starts after this date
+Section 5 of the I-983 "Employer Site Information": use the address where you are physically working
+If planning to file your I-765 application on paper by mail, you will need to upload a draft Form I-765 for OVIS review as part of your STEM OPT request.
+If planning to file your I-765 application online, we will ask for a screenshot of your eligibility category from the USCIS online application via myUSCIS --> Getting Started --> Basic Eligibility
+DO NOT submit your I-765 application, by mailing to USCIS or submitting payment on the USCIS system, until you have received your STEM OPT recommended I-20 from OVIS! 
+   3. Submit your e-form request in iDartmouth. OVIS will issue a Form I-20 with STEM OPT recommendation once approved.
+
+   4. Make a complete copy of the application filing for your records
+
+  5. Submit your complete I-765 application application as inidicated, either online or via courier/certified mail service that provides a record of receipt/delivery
+
+USCIS must receive your I-765 application before your Post-Completion OPT expires and no later than 60 days after the STEM OPT recommended I-20 is issued.
+If USCIS receives your application after your OPT expires, or more than 60 days after the date of signature on the Form I-20, the application will be denied.
+Once you have a receipt number for your application, you can check the USCIS Online Case Status for updates on your application.
+
+Premium Processing
+On March 6, 2023 USCIS announced the expansion of premium (expedited) processing for certain F-1 OPT and STEM OPT extension applications.  The premium processing fee is $1500, in addition to the standard application filing fee.  USCIS will adjudicate the application within 30 days of receipt.  USCIS will accept the online Form I-907 premium processing request in 2 phases:  1. Beginning March 6, 2023 for students with pending I-765 OPT and STEM OPT applications; and, 2. Beginning April 3, 2023 for students with new OPT and STEM OPT applications.  It is important to consider current USCIS processing times before deciding whether to request premium processing.

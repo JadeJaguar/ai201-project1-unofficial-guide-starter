@@ -1,0 +1,34 @@
+SOURCE: https://ovis-intl.dartmouth.edu/immigration/f-1-students/employment/stem-optional-practical-training-opt/stem-opt-reporting
+FILENAME: work_auth_dartmouth_stem_opt_reporting.txt
+
+F-1 Students
+
+STEM OPT Reporting
+Overview
+While on STEM OPT you continue to hold F-1 status with Dartmouth.  During your period of STEM OPT you are required to report your STEM OPT employment to OVIS, and OVIS will update your SEVIS record.  
+
+You are required to update the following, within 10 days of any change:
+
+Legal name
+Residential address
+Employer name and address
+Loss of employment
+Change in employer
+Change of status to another visa category
+Standard 6-month Reporting Requirement
+There is a standard STEM OPT reporting requirement every six months, regardless of whether there has been any change.  SEVIS requires this validation report to confirm the information in your SEVIS record.  You can do this by submitting your update directly in iDartmouth. OVIS must submit the report within 10 days of the six-month reporting date.
+
+12 and 24-Month STEM Reporting and Self-Evaluation
+In addition to the standard OPT participation reporting you are required to do at each six-month reporting mark, you are required to submit the OPT self-evaluation from the Form I-983 STEM OPT Training Plan at the 12 and 24-month reporting marks.  Department of Homeland Security has a Planning Tool for STEM OPT reporting on its Study in the States website.  The completed self-evaluation must be submitted to OVIS at the 12-month mark following the start of the STEM OPT period, and the final, completed self-evaluation must be submitted at the end of the 24-month STEM OPT period, or when the STEM OPT employment ends, whichever is sooner.  Additional information for STEM OPT reporting can be found on the Study in the States STEM OPT Hub website.
+
+You can submit your STEM OPT update and annual self-evaluation directly in iDartmouth.
+
+Changing or Adding a STEM OPT Employer
+If you change or add a STEM OPT employer, you must update OVIS within 10 days of starting the new practical training opportunity by submitting the employer information and a new Form I-983 in iDartmouth
+
+You can find the Form I-983 on Study in the States.
+
+Additional information on your reporting obligations can be found on the Study in the States website.
+
+SEVP Student Portal
+In 2018 SEVP introduced the SEVP Student Portal.  It is an optional tool that F-1 students can use to view your OPT information in SEVIS and update it.  Because OVIS requires that you report changes to our office, and we in turn report that information to SEVIS on your behalf, we require that you continue use the OVIS iDartmouth reporting tool. This will help prevent discrepancies in data between your OVIS record and your SEVIS record, and avoids the need for you to do double reporting.

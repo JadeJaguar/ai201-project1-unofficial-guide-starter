@@ -1,0 +1,370 @@
+SOURCE: https://www.ice.gov/sevis/employment
+FILENAME: work_auth_ice_sevis.txt
+
+Employment
+Nonimmigrant students must comply with certain federal laws and regulations when seeking employment in the United States. Answers to frequently asked questions about on- and off-campus employment are included below:
+1. F-1 Student On-Campus
+2. F-1 Student Off-Campus
+3. F-1 International Intern
+
+
+1. F-1 Student On-Campus
+--- Basic Guidelines
+- What qualifies as on-campus employment for an F-1 student?
+The definition for on-campus employment is in 8 CFR 214.2(9)(i).
+
+There are two types of limits on the employment. The work must take place either at your school or at an educationally affiliated (associated with the school’s established curriculum or part of contractually funded research projects at the postgraduate level) off-campus location:
+
+On the school premises
+Work that takes place at your school location could be for an on-campus commercial business, like a bookstore or cafeteria, as long as the work directly provides services for students.
+Employment located on-campus that does not directly involve services to students (such as construction work) does not qualify as on-campus employment.
+Educationally affiliated off-campus location
+Work with an employer that is contractually affiliated with the school is on-campus employment even if the work site is not located on the campus (such as a research lab affiliated with your school).
+On-campus employment must not displace a U.S. citizen or lawful permanent resident (LPR).
+
+- What are the basic guidelines for on-campus employment?
+An F-1 student has three main employment-related guidelines:
+
+May work at any qualifying on-campus job that does not displace a U.S. citizen or LPR.
+May work up to 20 hours per week while school is in session (full-time during those periods when school is not in session or during the annual vacation)
+Should report their work to you and receive a certification letter to present to the Social Security Administration in order to be able to receive a Social Security number.
+Not complying with these guidelines for on-campus employment may be a violation of status that could result in the F-1 student having to leave the United States.
+
+- What are a designated school official’s (DSO) responsibilities for on-campus employment?
+The questions above on "What qualifies as on-campus employment for an F-1 student?" and "What are the basic guidelines for on-campus employment?" define the parameters for on-campus employment.
+
+As the DSO, you have certain responsibilities:
+
+Counsel the student concerning the following:
+Number of hours the F-1 student may work
+Type of employment
+Need to maintain F-1 status
+Tax and Social Security implications
+Reporting changes in employment and hours worked
+Have a letter from each employer concerning the nature of the job and the work hours
+Give the F-1 student a letter for Social Security purposes certifying that the job qualifies as on-campus employment and that the student is in F-1 status
+Keep records on the F-1 student’s employment in the school files
+Terminate the F-1 student’s SEVIS record if you know the student is engage d in any unauthorized employment or works hours in excess of those allowed by regulation
+
+- When does an F-1 student become eligible for on-campus employment?
+An F-1 student may begin working as much as 30 days before the start of a program of study. They should inform the DSO before they begin work.
+
+If an F-1 student finishes a program (such as a bachelor’s degree) and starts another program of study at the same campus, the student may continue on-campus employment as long as the student plans to enroll in the new program of study for the next term. If otherwise eligible, an F-1 student may continue to work on-campus with a pending application for reinstatement or change of status.
+
+- Where can on-campus jobs be located?
+The job must be physically located on the school’s campus or off-campus at the site of an educationally affiliated organization.
+
+- What are the restrictions for students under on-campus employment?
+Employment on-campus has to be for the school or for a company that contracts with the school to serve students directly.
+
+For example, if your school contracts with a food service company, an F-1 student can work for the company at school facilities but not for the same company at any off-campus locations.
+
+An F-1 student cannot work for a company contracting with the school for something other than student services
+An F-1 student cannot work for a company that does not contract with the school, even if the work location is physically located on school property.
+For example, an F-1 student cannot work for a construction company, even if the job site is on the campus.
+
+However, an F-1 student may work for a contractually affiliated company such as a school bookstore, because it provides services to students.
+
+- What does educationally affiliated mean?
+In the case of off-campus locations, educational affiliation means the location meets one of two important criteria:
+
+Associated with the school's established curriculum
+Related to contractually funded research projects at the post-graduate level
+In the case of on-campus locations, educational affiliation means the location meets the following criteria:
+
+Included in a financial aid package
+Scholarship
+Fellowship or assistantship
+
+- May an F-1 student work on-campus after enrolling in a new program of study?
+Yes. If an F-1 student finishes one program of study at one educational level (such as a bachelor’s degree) and starts another program of study at the same campus, the student may continue on-campus employment as long as the student plans to enroll for the next term.
+
+- If otherwise eligible, may an F-1 student continue to work on-campus with a pending application for a change of status?
+Yes.
+
+- 
+For how long may an F-1 student continue to work on campus?
+An F-1 student who is enrolled in school, maintains status and follows the guidelines for on-campus employment may continue to work. The F-1 student should keep a DSO informed of any changes in employer and hours, however.
+
+An F-1 student may only work on-campus after the program end date if continuing the education at the next program level at the same school.
+
+- Must an F-1 student wait one academic year before starting to work on campus?
+No.
+
+- May an F-1 student work at more than one on-campus job?
+Yes. However, the F-1 student’s total work hours for all jobs cannot exceed 20 hours during the school term. The F-1 student may work full-time during those periods when school is not in session or during the student’s annual break.
+
+- May an F-1 student work on campus during the 60-day grace period after the program end date?
+No. The 60-day "grace" period after graduation or post-completion OPT is for an F-1 student to prepare to leave the United States, unless the student is beginning a new program of study. An F-1 student may consider applying for post-completion OPT to continue working after graduation.
+
+- What are the requirements for an F-1 student who transfers?
+When an F-1 student transfers to a new school, on-campus employment is available to the student only at that school after the record release date. The F-1 student cannot work at the prior school after that date.
+
+- Is an F border commuter student eligible for on-campus employment?
+No. Per 8 CFR 214.2(f)(18), the only employment in which an F-1 border commuter student may engage is CPT and post-completion OPT.
+
+--- Approval Process
+- How does an F-1 student get permission to work on-campus?
+An F-1 student automatically has permission to work on campus (unless he or she is a border commuter) but still needs to work with a DSO to ensure the job offered qualifies as on-campus employment.
+
+An F-1 student will need certification letters from the DSO and the employer. The student must present these letters to officials at the local Social Security Administration office to get a Social Security number.
+
+- What employment information must a DSO enter into SEVIS?
+If the F-1 student intends to list on-campus employment as a means of financial support, the DSO should enter the dollar amount of the anticipated income in the on-campus employment field in SEVIS when they create the student's initial Student and Exchange Visitor Information System (SEVIS) record.
+
+If the student's means of support changes and the student now wants to list on-campus employment, a DSO must update the student's record accordingly.
+
+DSOs may include on-campus employment information in the SEVIS remarks section even if the student does not intend to list this work as a means of support.
+
+DSOs should terminate the student's SEVIS record for unauthorized employment if the student engages in any unauthorized employment or works hours in excess of those allowed.
+
+- What employment records should a DSO keep?
+SEVP recommends that a DSO keep a copy of the letter from each employer that describes the type of work, the affiliation to the school (if needed), and the number of hours the student will work per week.
+
+DSOs should keep a copy of their letters to the Social Security Administration certifying that the student may work on-campus.
+
+- If a school has several campuses in the local area, may an F-1 student work at a different campus?
+F-1 students may work at a campus other than the one at which they attend classes if the other campus meets the following criteria:
+
+Within reasonable commuting distance
+Listed on the same Form I-17, "Petition for Approval of School for Attendance by Nonimmigrant Student"
+Within the DSO’s same jurisdiction
+
+- What does an F-1 student need to do to change on-campus jobs?
+An F-1 student needs to talk to their DSO before changing jobs. This will allow the DSO to ensure that the new position qualifies as on-campus employment and to ensure the DSO has the correct employment information in the student's SEVIS record.
+
+--- Work Hours
+- Are there exceptions to the limit of 20 hours a week for on-campus employment?
+The only exception is if the Secretary of DHS suspends this requirement, by means of a Federal Register notice, due to emergent circumstances. The student must demonstrate to you that the extra work is necessary because the emergent circumstance has affected his or her source of support.
+
+DSOs should endorse the student’s Form I-20 with a reference to the Federal Register notice that announced the emergency exception before allowing the student to work more than 20 hours a week.
+
+2. F-1 Student Off-Campus
+--- Basic Guidelines
+
+- What is off-campus employment for F-1 students?
+Regulation that defines off-campus employment for F-1 students is in 8 CFR 214.2 (f)(9)(ii). Generally, it is employment that is for economic need and does not necessarily have to relate to the student's academic course of study.
+
+- When is off-campus employment available?
+An F-1 student must show an ability to afford the costs of school and living expenses before entering the United States and should not plan to work off-campus. U.S. Citizenship and Immigration Services (USCIS) will authorize off-campus employment only in cases of severe economic hardship occurring after a student's enrollment in an academic program and after the student has been in F-1 status for at least one full academic year, or in emergent circumstances as defined by the Department of Homeland Security (DHS).
+
+- What are emergent circumstances?
+Emergent Circumstances are world events that affect a specific group of F-1 students and which causes them to suffer severe economic hardship, including, but not limited to natural disasters, wars and military conflicts, national or international financial crises.
+
+Special Student Relief is the suspension of certain regulatory requirements for an F-1 student subsequent to an emergent circumstances determination, affecting any or all of the following on-campus employment, off-campus employment, duration of status, and full course of study.
+
+- What are the guidelines for off-campus employment of F-1 students based on severe economic hardship?
+USCIS makes case-by-case decisions for off-campus employment for students who can show that new, unexpected circumstances beyond their control have created severe economic hardship. These may include the following:
+
+Loss of financial aid or on-campus employment (if the student is not at fault)
+Large increases in tuition or living costs
+Substantial decrease in the relative value of currency the student depends upon to pay expenses
+Unexpected changes in the financial conditions for a student's sources of financial support
+Unexpectedly large medical bills not covered by insurance
+Other substantial, unexpected expenses
+An F-1 student must have remained enrolled for at least one academic year, in status and in good academic standing before USCIS will authorize off-campus employment.
+
+The F-1 student must be unable to get on-campus employment, or the pay from available on-campus employment must be insufficient to meet financial needs.
+
+For each request approval, a DSO must provide the F-1 student with a Form I-20, "Certificate of Eligibility for Nonimmigrant Student Status," endorsed to that effect.
+
+The F-1 student must file a Form I-765, "Application for Employment Authorization," and pay a fee to USCIS. The student should file within 30 days of the day the DSO endorses the Form I-20. If USCIS approves the application, the student will receive a Form I-766, "Employment Authorization Document," (EAD) from USCIS and can begin working.
+
+Approval for off-campus employment is good for one year. If the F-1 student needs to continue working off-campus, the student must re-apply.
+
+- What are the guidelines for off-campus employment for F-1 students based on emergent circumstances?
+The guidelines for off-campus employment based on emergent circumstances are in the authorizing Federal Register notice.
+
+The USCIS website has a listing of notices and memorandums for groups currently allowed relief due to emergent circumstances
+
+What does a DSO need to consider before recommending off-campus employment for an F-1 student?
+First, a DSO should check to see if on-campus employment is available, and only recommend off-campus employment if available on-campus employment is not sufficient to meet the student's financial needs.
+
+A DSO should ensure the student has read and understands the guidelines for off-campus employment.
+If the student meets the following criteria, a DSO can recommend off-campus employment:
+
+Has been in F-1 status for one full academic year
+Is in good academic standing
+Is enrolled in a full course of study
+Can show that working will not adversely impact the ability to attend school full-time and maintain academic standing
+Can show severe economic hardship due to unforeseen circumstances beyond the student's control
+
+- How does off-campus work authorization differ from on-campus employment at an off-campus location?
+Off-campus work authorization requires case-by-case approval from USCIS. Approval is not based on the student's choice of employer.
+
+On-campus employment at an off-campus location is available to all F-1 students except border commuter students. An F-1 student does not need USCIS approval. However, the employment must be for an employer educationally affiliated with your school. 
+
+- Are border commuter students eligible for off-campus employment?
+No. According to 8 CFR 214.2(f)(18), a border commuter student may only engage in practical training, specifically CPT and post-completion OPT.
+
+--- Application Process
+- 
+How does the application process for off-campus employment start?
+The process starts when an F-1 student asks the DSO’s permission to seek employment in an off-campus job. After the DSO decides if they should make the recommendation, they enter it in SEVIS. The DSO should print the supporting Form I-20, "Certificate of Eligibility for Nonimmigrant Student Status," sign pages 1 and 3 and give it to the student.
+
+SEVP recommends that a DSO help the student ensure that the supporting evidence for the Form I-765, "Application for Employment Authorization," clearly shows eligibility.
+
+- What is the process for requesting off-campus employment in SEVIS?
+See the F/M Student Employment Overview on the Study in the States SEVIS Help Hub.
+
+- What does an F-1 student do after receiving a Form I-20 endorsing the application for off-campus employment?
+The student must file a Form I-765 with U.S. Citizenship and Immigration Services (USCIS) within 30 days. See the USCIS website for the form and filing information. The student must pay a fee to USCIS. Electronic filing is available. A DSO should make sure the student reads the form carefully and follows the directions.
+
+As part of the supporting evidence, the F-1 student must include the specially endorsed Form I-20 signed on pages 1 and 2 by a DSO.
+
+If you are unable to issue an updated Form I-20, send USCIS a letter of explanation.
+
+- Can a DSO cancel their recommendation for off-campus employment?
+Yes. A DSO has the option in SEVIS to cancel their recommendation for off-campus employment.
+
+- How does USCIS adjudicate an application for off-campus employment?
+The only reasons for granting work authorization for off-campus employment are economic hardship or emergent circumstances. The USCIS officer will base the decision on the following information:
+
+Form I-20
+Form I-765
+Additional supporting materials
+The Federal Register notice governing emergent circumstances, if applicable
+
+- How can an F-1 student find out the status of an application for employment authorization?
+The F-1 student can check online at the USCIS website using the application receipt number.
+
+- What happens if USCIS approves an application for employment authorization?
+If USCIS approves an F-1 student's employment authorization application, they will send the student a Form I-766, "Employment Authorization Document," and a letter notifying the student of the decision. In addition, the F-1 student's SEVIS record automatically updates to show the off-campus employment approval.
+
+- What happens if USCIS denies an application for employment authorization?
+If denying an application for employment authorization for off-campus employment, USCIS will send the F-1 student a denial letter giving the reason(s) for the denial.
+
+- Can an F-1 student appeal a USCIS denial of an application for employment authorization for off-campus employment?
+No. If USCIS denies an application for employment authorization, the F-1 student will receive a letter that explains the decision. The student can file a motion (by the deadline given in the letter) with the same office to re-open or to reconsider the decision.
+
+By filing a motion, the F-1 student is asking USCIS to re-examine or reconsider its decision
+
+A motion to re-open must state any new facts that would support the motion. USCIS may require the F-1 student to submit affidavits or other documentary evidence in support of these new facts.
+A motion to reconsider must establish that the decision was based on an incorrect application of law or immigration policy, and further establish that the decision was incorrect based on the evidence in the file at the time USCIS made the initial decision. For information on how to file a motion to re-open or to reconsider, see the USCIS website.
+
+- What if an F 1 student cannot afford the application fee for a Form I-765 or motion?
+An F-1 student may apply to have the fee waived. For information see the USCIS website.
+
+--- Work Hours and Period of Work Authorization
+
+- May an F-1 student begin off-campus employment with a pending Form I-765, "Application for Employment Authorization"?
+No. An F-1 student must wait to receive the approval from USCIS before beginning off-campus employment.
+
+- How many hours may an F-1 student work with authorization for off-campus employment?
+Hours an F-1 student may work for off-campus employment
+Description	Number of hours
+While school is in session	20 hours per week or fewer
+During the F-1 student’s annual break	Full-time
+When school is not in session	Full-time (if the F-1 student plans to enroll full-time in the next session)
+See 8 CFR 214.2(f)(9)(ii) for a full explanation of the limits when school is not in session.
+
+- Are there exceptions to the limit of 20 hours a week for on-campus employment?
+Emergent circumstances are exceptions. The Secretary of the Department of Homeland Security may lift the limits temporarily by publishing a notice in the Federal Register.
+
+F-1 students authorized for on-campus employment may exceed 20 hours of work per week during breaks and annual vacation as well.
+
+- How long is the authorization for off-campus employment valid?
+Authorization lasts for one year. For more information, see the question on When is off-campus employment available?
+
+- If an F-1 student has been working off-campus but has an expired current work authorization, may that student continue working while...
+If an F-1 student has been working off-campus but has an expired current work authorization, may that student continue working while the new Form I-765 is pending?
+
+No. To avoid this situation, an F-1 student should submit new Form I-765 from ninety days to six months before the expiration of the current EAD.
+
+If USCIS does not approve or deny the Form I-765 within 90 days of receiving the application, the F-1 student may apply for interim employment authorization. See the USCIS website for more information.
+
+- Will off-campus work authorization continue if an F-1 student has a pending application for change of status?
+Yes, work authorization continues as long as the EAD has not expired and the student otherwise maintains F-1 status.
+
+- Can an F-1 student lose permission for off-campus employment?
+Yes, it is possible for USCIS to reopen and deny the F-1 student application for off-campus employment. A denied application ends the student’s employment authorization. An F-1 student must maintain status and be in good academic standing. Employment authorization automatically ends if that student does not maintain status. One example of a violation of status is working more hours than authorized.
+
+- May an F-1 student at a school apply for a transfer and continue to work off-campus?
+An F-1 student whose EAD has not expired may work at the transfer-out school up to the transfer release date, but not after. An F-1 student who needs to continue working off-campus after the transfer must apply at the transfer-in school.
+
+- May an F-1 student transferring in to a school with approval for off-campus employment continue working off-campus?
+No. This is not permissible on the current EAD authorized on the basis of recommendation from the transfer-out school. A designated school official (DSO) at the transfer-in school must review the student’s circumstances and make new recommendations, if warranted. The student will have to file a new Form I-765 with supporting documents and fees, but does not have to wait a year before reapplying.
+
+- May an F-1 student who travels outside the United States resume off-campus employment upon return?
+Yes, this is permissible if the F-1 student meets all of the following characteristics:
+
+Unexpired EAD
+The student still attends the school
+The student is maintaining status
+
+- What must a DSO do if the F-1 student works more hours than authorized or works past the date the authorization ends?
+The DSO must report this action to SEVP in SEVIS by terminating the student’s record for unauthorized employment.
+
+DSOs should stay in touch with F-1 students and emphasize the need to carefully follow the guidelines for off-campus employment.
+
+- Can an F-1 student who has graduated and has an unexpired EAD continue to work off-campus?
+The off-campus employment authorization ends 1 year after issuance or upon completion of the program (whichever comes first). An F-1 student may be eligible to apply for post-completion optional practical training upon graduation.
+
+3. F-1 International Intern
+--- Basic Guidelines for Designated School Officials (DSOs)
+
+- What is an internship with an international organization?
+The internship must meet certain criteria:
+
+With a recognized international organization within the meaning of the 59 Stat. 669, International Organization Immunities Act, (see 22 USC 288)
+Within the scope of the organization's sponsorship
+
+- What does a DSO need to consider before certifying a student&#39;s eligibility for an internship at an international organization for a student?
+The student must meet certain criteria:
+
+Be in F-1 status
+Not be a border commuter student
+Be enrolled full-time
+Have a written offer of employment from a qualifying international organization
+A DSO does not need to consider either of these items:
+
+Need or hardship
+Relationship of the internship to the student's field of study
+
+- May a border commuter student work as an intern at an international organization?
+A border commuter student may not work as this type of intern within the United States. Commuter students may only engage in curricular practical training or post-completion optional practical training.
+
+--- Application Process
+
+- How does a student apply for approval to work as intern for an international organization?
+This student must follow a specific process to complete this application:
+
+Have a written offer from the organization
+Have a Form I-20, "Certificate of Eligibility for Nonimmigrant Student Status," from the DSO, signed within the last 30 days, certifying that the applicant is a bona fide F-1 student
+Submit the following to U.S. Citizenship and Immigration Services (USCIS):
+Form I-765, "Application for Employment Authorization"
+Fee for the Form I-765 (See the USCIS website for the form and filing information.)
+Supporting documentation listed on the Form I-765
+
+- Where can DSOs and students find recognized international organizations within the meaning of the International Organization Immunities Act...
+Where can DSOs and students find recognized international organizations within the meaning of the International Organization Immunities Act (59 Stat. 669)?
+
+These international organizations are available in 8 CFR 316.20.
+
+- How does the approval process for employment as an international organization intern start?
+As per 8 CFR 214.2(f)(9)(iii), the student must first obtain an internship offer with an international organization then work with the DSO and apply for an Employment Authorization Document with USCIS.
+
+If the DSO decides to certify the student's eligibility, the DSO must enter their recommendation into the Student and Exchange Visitor Information System (SEVIS). The DSO should then print the supporting Form I-20, sign pages 1 and 2 and give the form to the student.
+
+- What is the process for approving employment as an intern at an international organization in SEVIS?
+See the F/M Student Employment Overview on the Study in the States SEVIS Help Hub for detailed instructions.
+
+- Can a DSO cancel their recommendation for employment as an intern at an international organization?
+Yes. A DSO has the option in SEVIS, but only before the student submits the Form I-765 and supporting documentation. See the F/M Student Employment Overview on the Study in the States SEVIS Help Hub for detailed instructions.
+
+- How does a student check the status of an application?
+The F-1 student can check online at the USCIS website using the application receipt number.
+
+--- Work Hours and Period of Authorization
+
+- For how many hours can a student have authorization to work as an intern at an international organization?
+This type of employment can be full-time or part-time. However, the student must be full-time student when the school is in session and maintain status.
+
+- For how long is the employment authorization for intern employment at an international organization valid?
+This authorization is valid for one year. If the job continues to be available, the student must apply for continued employment authorization six or more months before the authorization expires.
+
+- Can a student continue working as an intern at an international org. if the current work authorization has expired but a new application is pending?
+No. See the related question: Where can DSOs and students find recognized international organizations within the meaning of the International Organization Immunities Act (59 Stat. 669)?
+
+Updated:
+12/30/2025

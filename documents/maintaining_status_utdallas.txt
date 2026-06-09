@@ -1,0 +1,70 @@
+SOURCE: https://isso.utdallas.edu/immigration-status/f1-maintain/
+FILENAME: maintaining_status_utdallas.txt
+
+Maintain F-1 Status
+In order to remain lawfully in the U.S. in F-1 status, and to eligible for F-1 benefits such as employment, you must maintain your F-1 immigration status.
+
+What is F-1 status?
+Your F-1 status is different than your F-1 visa. When you enter the United States, you are admitted in a specific immigration status, which is indicated on your I-94. If you change to F-1 status inside the U.S., then you receive an I-797 Approval Notice with a new I-94 attached.
+
+Maintaining F-1 Status
+Report to the International Office listed on your I-20. Follow Department of Homeland Security (DHS) and University transfer procedures to attend a new school.
+Do not work without authorization and follow F-1 rules regarding on-campus and off-campus employment.
+Always have a valid, unexpired passport and Form I-20. An unexpired F-1 visa is not required to maintain F-1 status.
+Update your I-20 if your information changes. For example, if you change majors, degree levels, financial support changes, or request OPT or CPT employment.
+Notify the University each time you change your local address. Update Galaxy within 10 days of the move. While on Optional Practical Training you must also submit an OPT Reporting eForm through iComet.
+Enroll full-time every long semester unless approved for reduced enrollment by an international student advisor. Summer enrollment is not required unless it is your first or final semester in a new program.
+Submit the Current Student Check-In through iComet every long semester by Census Day. You are not required to submit the Current Student Check-In for the summer semester.
+Make normal progress towards completing your degree. If you require more time on your I-20, follow program extension procedures before the I-20 completion date.
+Leave the U.S. when you are finished with your degree or your period of Optional Practical Training.
+If you do not follow the above requirements, you will be considered “out-of-status” and may be subject to deportation.
+
+Maintain Form I-20
+There are a variety of situations that require an update to the Form I-20. It is your responsibility to update the information on your I-20 when your information changes.
+
+Adding Dependents
+You may add dependents (spouse and/or children) to your Form I-20. See F-2 Dependents for more information.
+
+Change of Finances
+You may update the finances portion of your Form I-20 at any time. Submit the following documents by uploading through the “Other Requests” eForm found in the F-1 Current Students section of iComet
+
+I-20 Update Form
+UT Dallas Financial Affidavit and proof of funds for one academic year
+Change of Level
+The U.S. Department of Homeland Security refers to certain changes between programs as a “change of level.” If you fit in one of the following situations, you must acquire a Change of Level I-20 to maintain F-1 visa status:
+
+Graduating from one degree program and starting another within five months. 
+Moving from one degree program to another at a different educational level. For example, moving from a PhD to a Master’s program without completing the PhD.
+Completing OPT and starting a new degree program within 5 months.
+Moving from OPT to a new program before the OPT end date. 
+See the Change of Level page for more information. Note: You must be admitted to a degree-seeking program at UT Dallas that is approved by DHS and eligible for an I-20. See the Understand Your I-20 web page for more information.
+
+Change of Major
+Change of major I‑20s may be requested at any time after your major has been officially updated in Galaxy. Once Galaxy reflects your new major, ISSO will either automatically initiate the I‑20 update or you may be asked to submit a Change of Major request eForm.
+
+You must be admitted to a degree‑seeking program at UT Dallas that is approved by the U.S. Department of Homeland Security (DHS) and eligible for I‑20 issuance. For additional details on program eligibility, please review the Understand Your I‑20 webpage.
+
+Important: If you currently have Curricular Practical Training (CPT) or will be applying for Optional Practical Training (OPT) F‑1 employment authorization, remember that all employment must be directly related to your major and degree level listed on your Form I‑20. A change of major may affect your eligibility for continued employment authorization. Students with active work authorization should consult ISSO before proceeding.
+
+You will be notified by email when your updated I‑20 is ready.
+
+Program Extension
+F-1 students are required to complete their academic programs within an estimated period of time. If you are not able to complete your program before the end date on your I-20, you may be eligible for an extension of stay.
+
+Eligibility
+You must apply prior to the I-20 expiration date.
+You must be currently maintaining status and making normal progress toward completing your educational objective.
+You must meet one of the valid Department of Homeland Security (DHS) reasons for an extension:
+Compelling academic reason such as a change of major, research topics or research complications.
+Documented medical reason such as hospitalization or prolonged illness.
+Keep in mind:
+
+Academic probation, suspension, or Curricular Practical Training are not valid reasons for a program extension.
+A program extension is still required if you are graduating by Priority Deadlines after your I-20 expiration date. Please see the Graduation and Beyond page for more information about the impact of Priority Deadlines on F-1 status.
+Submit by uploading through the “Other Requests” eForm found in the F-1 Current Students section of iComet
+
+Program Extension Form, signed by your academic advisor or academic department head.
+UT Dallas Financial Affidavit and proof of funds for one academic year
+If the extension is for the first 8-week session, no proof of funds required.
+If the extension is for one semester or within the second 8-week session, please submit proof of funds for one semester (half of one academic year).
+If the extension is for two or three semesters (one academic year), submit proof of funds for one academic year.

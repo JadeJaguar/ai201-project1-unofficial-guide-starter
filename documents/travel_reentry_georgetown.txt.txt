@@ -1,0 +1,90 @@
+Travel Out & Reentry: F-1 & J-1 Students
+ Travel Document Checklist
+In order to return to the United States after a temporary absence, F-1 and J-1 students must present specific documents to the immigration inspector at the port of entry:
+
+Form I-20 (F-1 students) or Form DS-2019 (J-1 students) with a page 2 travel signature from OGS
+Prior to the program end date on the Form I-20/Form DS-2019, the travel signature must be less than one year old.
+During F-1 Post-Completion Optional Practical Training (OPT), the Form I-20 travel signature must be less than 6 months old.
+a valid and unexpired passport (valid six months into the future)
+a valid and unexpired visa stamp (certain exceptions apply)
+original financial documentation
+a copy of the academic transcript (only for travel prior to graduation)
+a copy of the course schedule for the semester in which you are traveling and/or upcoming registered courses
+a copy of SEVIS I-901 Fee Payment
+an Employment Authorization Document (EAD) Card (during the F-1 Post-Completion OPT period only). Travel is not recommended for students who applied for Post-Completion OPT until after OPT is approved by USCIS and the student has received the EAD card.
+Employment Letter from the current employer (during the F-1 Post-Completion OPT and J-1 Post-Completion AT period only).
+We also recommend you print, fill out, and carry an emergency travel card (PDF).
+
+Please review the FAQs for students who plan to travel during Post-Completion OPT and travel during Post-Completion AT.
+
+ Travel Signature
+Prior to the Form I-20/Form DS-2019 end date, travel signatures are valid for one year.
+
+During Post-Completion and the 24-Month STEM OPT Extension, Form I-20 travel signatures are valid for 6 months.
+
+To obtain a travel signature on your Form I-20 or Form DS-2019, please send your request via our Travel Signature Request Google Form.
+
+ Valid Visa Stamp
+With limited exceptions* students must present a valid, unexpired F-1 or J-1 visa each time they enter the United States. We encourage you to check the email used on the DS-160 for any notices from the issuing consulate.
+
+Students who need to renew their visa must do so at a U.S. consulate or embassy abroad. Visa stamps are never issued or renewed in the United States.
+
+To renew your visa:
+
+Complete the DS-160.
+Schedule an appointment with the U.S. embassy or consulate prior to finalizing travel plans.
+Carefully review the U.S. Department of State announcement and requirements about social media vetting.
+Prepare supporting documentation:
+Funding source (bank statements, pay stubs for those on OPT/STEM OPT)
+Transcripts (currently enrolled students)
+Other required documents as indicated on the consulate website
+Students engaged in F-1 Post-Completion OPT or J-1 Post-Completion AT should be aware that it can be more difficult to renew a visa during the post-completion period.
+
+Some visa applications may be subject to administrative processing due to the student’s social media postings, country of national origin, citizenship, field of study, or at the discretion of the Consular Officer. Administrative processing commonly takes one month but may require as long as 4-6 months.
+
+Generally, passports must be valid for at least six months into the future at all times while in the United States. Students who must renew their passport may continue to use their visa in the old passport as long as the visa remains valid and has not expired. In this situation, students should travel with both passports: the expired passport containing the valid U.S. visa, and the valid passport, which does not contain a visa stamp.
+
+*Exceptions to the visa requirement: Canadian citizens and Bermudian citizens (within certain time limits) are not required to have an F-1 or J-1 visa. Please see the U.S. Embassy’s website for more information.
+
+For students who hold an expired F-1 or J-1 visa, under certain conditions, travel to Canada, Mexico, and island countries in the Caribbean may not require visa renewal (see section below).
+
+ What Happens at the Port of Entry?
+You will meet with one Customs and Border Protection (CBP) officer, who will review your Form I-20 or DS-2019 and your passport with your unexpired F-1 or J-1 visa and return it to you. The CBP officer will likely also ask about the purpose of your travel to the United States. They may or may not also ask to see the other documents listed on our Travel Document Checklist (see above). In most cases, the CBP officer will then admit you to the United States. If this officer has additional questions, you may be referred to Secondary Inspection.
+
+Carefully review the following documents prior to reentering the United States:
+
+Enforcement at the Airport (ACLU resource)
+Border Search of Electronic Devices at Ports of Entry (CBP document)
+Electronic Device Searches at U.S. Ports of Entry: What You Need to Know (American Immigration Lawyers Association) (NAFSA webpage)
+An I-94 record will be created for each U.S. entry.
+
+ I-94 Record
+The I-94 is an electronic record that is generated each time you enter the United States. After every U.S. entry, look up your I-94 record and make sure it reflects the correct status (i.e., F-1 or J-1 rather than tourist, etc.) and Admit Until Date “D/S”, which means duration of status. If the information on your record is correct, print it and keep it in your records. If any of the information is incorrect, contact your IS Advisor for guidance.
+
+ Entry/Exit Border Procedures
+During entry procedures, students should answer all questions clearly. Omission or misrepresentation of information can result in denial of entry. OGS is always available to assist if a student encounters serious difficulty at the U.S. border. Call the Georgetown University Police Department (GUPD) at (202) 687-4343, and GUPD will contact OGS to assist.
+
+ Travel Restrictions During the Grace Period
+During the grace period following program completion, any departure from the United States is treated as final. F-1 or J-1 students and F-2 or J-2 dependents who depart the United States (including cruises) will not be permitted to reenter the United States in F-1/F-2 or J-1/J-2 status. A tourist visa or other valid status will be required to reenter the United States.
+
+Domestic travel within the United States is unrestricted during the grace period.
+
+ Biometric Identity Management
+The Department of Homeland Security’s Office of Biometric Identity Management provides biometric identification services that help federal, state and local government officials accurately identify the people they encounter and determine whether those people pose a risk to the United States. Upon entry to the United States, all visitors are subject to biometric identification through digital photographs and fingerprints.
+
+F and J visa holders: The data collected will be forwarded to SEVIS (Student and Exchange Visitor Information System), confirming that the person has entered or exited the United States. For more information, please see the OBIM website.
+
+ Travel to Canada, Mexico, and Neighboring Islands with an Expired F-1 or J-1 Visa
+Travel to Canada, Mexico, and neighboring islands (except Cuba) is handled somewhat differently than travel to other countries.
+
+The automatic visa revalidation provision allows students whose F-1 or J-1 visa has expired to briefly visit Canada; Mexico; Saint Pierre; Miquelon; the Dominican Republic; Haiti; Bermuda; the Bahamas; Barbados; Jamaica; the Windward and Leeward Islands; Trinidad; Martinique; and other British, French, and Netherlands territories or possessions in or bordering the Caribbean Sea, except Cuba, and return to the United States without applying for a new visa at a U.S. consulate. The following rules apply to automatic visa revalidation:
+
+The visit must not exceed 30 days and may be spent only in Canada and Mexico or adjacent islands – except Cuba.
+The F-1 or J-1 student must not be a citizen of a country that the Department of State has determined to be a sponsor of terrorism.
+The student must have a valid Form I-20 or Form DS-2019 with a valid travel signature.
+The student must have a valid passport (valid six months into the future).
+The student must have maintained status while in the United States and intend to resume that status upon returning to the United States.
+The student must present the most recent I-94 record of entry upon reentry to the United States.
+Learn more about automatic revalidation on the U.S. Department of State website. We recommend you print this page and carry it with your immigration documents if you intend to reenter the United States via automatic revalidation.
+
+NOTE: Students who apply for a visa at a U.S. consulate in Canada, Mexico, or adjacent islands cannot use the automatic visa revalidation to return to the United States if the visa is denied. Federal regulations prohibit those who have been denied a visa at one of the U.S. consulates in Canada, Mexico, or adjacent islands from returning to the United States. Those whose visa applications are denied must return to their home country and apply for a new visa at the U.S. consulate in their home country prior to returning to the United States.

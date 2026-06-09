@@ -1,0 +1,31 @@
+SOURCE: https://ovis-intl.dartmouth.edu/immigration/f-1-students/f-1-program-completion
+FILENAME: maintaining_status_program_completion.txt
+
+F-1 Students
+F-1 Program Completion
+The immigration regulations require the SEVIS program end date for F-1 students, which is reflected on the Form I-20, to be the date that the student completes all requirements for the degree.  For undergraduate and most master's degree students the program end date is the last day of final exams in the final term of enrollment.  The program end date on the Form I-20 marks the last day of on-campus employment authorization.  The program end date also dictates the filing window for post-completion Optional Practical Training. 
+
+PhD Student Program Completion
+International doctoral students should consult Guarini's Information for Submission of Thesis, Dissertation, or Course-Track Fulfillments page to help determine the appropriate end date for their F-1 program at Dartmouth. 
+
+The immigration regulations require the SEVIS program end date for F-1 students, which is reflected on the Form I-20, to be the date that the student completes all requirements for the degree.  OVIS will work directly with individual students, their faculty supervisors, host departments and schools to confirm the appropriate program end date based on factors including dissertation defense date, time for corrections, obligations under a Notice of Assignment (NOA), funding and any other relevant considerations.  The earliest program end date that may be possible under the Guarini guidelines is the thesis defense date, and the latest program end date is the last official day of the term in which the defense takes place.  If the defense occurs between terms, the latest program end date is the day before the new term begins.  Doctoral students must continue to receive funding up to the program end date on the Form I-20. Note that in cases other than an unconditional pass, a student may need to continue enrollment and extend the F-1 program end date.
+
+The final program end date marks the last day of F-1 "on-campus employment".  F-1 students are not authorized to work for Dartmouth College pursuant to on-campus employment after the program end date, and are not eligible to work for any employer until they have secured Optional Practical Training or another work-authorized status in the U.S. 
+
+The final program end date will determine the filing window for F-1 post-completion Optional Practical Training. Under the immigration regulations, an F-1 student can apply for post-completion OPT no earlier than 90 days before the program end date on the Form I-20, and no later than 60 days after the program end date.  Applying means that the OPT application is received by USCIS. 
+
+F-1 students should follow these steps to finalize the Form I-20 Program End Date:
+Confirm Defense Date
+Work with your PI/Advisor, your degree program/department, the Guarini School Registrar's Office, and your OVIS advisor to confirm your program end date.  The Form I-20 Program End Date (PED) will be adjusted to reflect the agreed-upon PED. 
+
+Adjust I-20 Program End Date
+Earliest possible Form I-20 PED: thesis defense date
+Latest possible Form I-20 PED: last day of the term in which you defend, with PI/department/Guarini approval
+If the defense date is between terms, the latest I-20 PED OVIS can use is the day before the next term begins
+You may continue revising and submit the final thesis after your I-20 PED
+Please also review Guarini's thesis submission requirements.
+
+Why the I-20 Program End Date Matters
+Eligible to apply (application filed and received by USCIS) for Optional Practical Training (OPT) up to 90 days before the Form I-20 PED and within 60 days after the Form I-20 PED
+Your OPT start date must be within 60 days after the Form I-20 PED
+No employment authorization of any kind, including on-campus for Dartmouth College, after your Form I-20 PED until OPT is approved, your EAD is received, and the EAD is in effect

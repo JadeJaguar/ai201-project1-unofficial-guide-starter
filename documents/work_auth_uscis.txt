@@ -1,0 +1,50 @@
+SOURCE: https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment
+FILENAME: work_auth_uscis.txt
+
+Students and Employment
+
+ALERT: Please remember that photos submitted to USCIS must be unmounted and unretouched. Unretouched means the photos must not be edited or digitally enhanced. The submission of any mounted or retouched images will delay the processing of your application and may prompt USCIS to require that you appear at an Applicant Support Center to verify your identity.
+
+If you would like to study as a full-time student in the United States, you will generally need a student visa. There are two nonimmigrant visa categories for persons wishing to study in the United States. These visas are commonly known as the F and M visas.
+
+You may enter in the F-1 or M-1 visa category provided you meet the following criteria:
+
+You must be enrolled in an "academic" educational program, a language-training program, or a vocational program
+Your school must be approved by the Student and Exchange Visitors Program, Immigration & Customs Enforcement
+You must be enrolled as a full-time student at the institution
+You must be proficient in English or be enrolled in courses leading to English proficiency
+You must have sufficient funds available for self-support during the entire proposed course of study
+You must maintain a residence abroad which you have no intention of giving up.
+F-1 Student Visa
+The F-1 Visa (Academic Student) allows you to enter the United States as a full-time student at an SEVP-certified college, university, seminary, conservatory, academic high school, elementary school, or other academic institution or in a language training program. You must be enrolled in a program or course of study that culminates in a degree, diploma, or certificate and your school must be authorized by the U.S. government to accept foreign students.
+
+M-1 Student Visa
+The M-1 visa (Vocational Student) category includes students in vocational or other nonacademic programs, other than language training.
+
+Employment
+F-1 students may not work off-campus during the first academic year, but may accept on-campus employment subject to certain conditions and restrictions. After the first academic year, F-1 students may engage in three types of off-campus employment:
+
+Curricular Practical Training (CPT)
+Optional Practical Training (OPT) (pre-completion or post-completion)
+Science, Technology, Engineering, and Mathematics (STEM) Optional Practical Training Extension (OPT)
+F-1 students may also be eligible to work off-campus on a case-by-case basis as a result of special situations such as severe economic hardship or special student relief. M-1 students may engage in practical training only after they have completed their studies.
+
+For both F-1 and M-1 students any off-campus training employment must be related to their area of study and must be authorized prior to starting any work by the Designated School Official (the person authorized to maintain the Student and Exchange Visitor Information System (SEVIS)) and USCIS.
+
+In general, only aliens who have permission from DHS to work can apply for a Social Security number.
+
+Special Instructions
+If you are interested in changing to F or M Student Status, see the Changing to a Nonimmigrant F or M Student Status page.
+
+Additional Resources
+For more information on the nonimmigrant student (F and M) classifications, see the USCIS Policy Manual.
+
+For more information on the residence abroad requirement, see 9 FAM 402.5-5(E)(1) of the U.S. Department of State Foreign Affairs Manual.
+
+For more information on the Student and Exchange Visitors Program, see the Student & Exchange Visitor Program, Immigration & Customs Enforcement and the Study in the States Training Opportunities in the United States pages.
+
+For more information on Foreign Students and Social Security Numbers, see the Social Security Administration website.
+
+Last Reviewed/Updated:
+
+11/20/2025

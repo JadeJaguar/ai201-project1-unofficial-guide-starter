@@ -1,0 +1,29 @@
+SOURCE: https://studyinthestates.dhs.gov/students/work/working-in-the-united-states
+FILENAME: work_auth_dhs_working.txt
+
+Working in the United States
+The U.S. government takes working illegally very seriously. This page will help you learn the basics of the work authorization process. 
+
+There are limited work opportunities available in the United States for F-1 students. For this reason, before coming to the United States, F-1 students must prove they have the financial ability (e.g., present bank statements) to pay for tuition and living expenses while studying. If you decide that you want to work, the first step is always to talk with your designated school official (DSO).
+
+If your DSO knows you are working without permission, they must report it through SEVIS, meaning your SEVIS record will be terminated. That means that you will have to leave the United States immediately, and you may not be allowed to return.
+
+Depending on your status and program of study, you may be eligible for the following type of employment opportunities while you study in the United States:
+
+1. On-Campus
+On-campus employment is work that F-1 students whose status is Active in SEVIS may apply for. On-campus employment is specific to work that takes place on campus or at an off-campus location that is educationally affiliated with the school. Examples of on-campus employment include working at a university bookstore or cafeteria.
+
+Active F-1 students may apply for on-campus employment up to 30 days before the start of classes. In order to apply, talk to your DSO. If approved, your DSO will provide you with a letter of approval. Take this letter from your DSO and a letter of approval from your employer to apply for a Social Security Number (SSN). All students who wish to work must apply for a Social Security Number.  
+
+If you participate in on-campus employment, you may not work more than 20 hours per week when school is in session. If you have additional questions, please visit the F-1 Student On-Campus page on ICE.gov ( https://www.ice.gov/sevis/employment#tab0).   
+
+2. Off-Campus
+Off-campus employment is work that that takes place outside of a school campus. Off-campus employment is only available to F-1 students who have completed at least one full academic year of their program of study, and who have an economic hardship that qualifies for the Department of Homeland Security’s emergent circumstances.
+
+To apply for off-campus employment, you must explain your economic hardship situation and receive approval to work from your DSO. If your DSO determines that the situation applies, he or she will recommend you and give you an updated Form I-20, “Certificate of Eligibility for Nonimmigrant Status.”
+
+Once you have the new Form I-20, you must file a Form I-765, “Application for Employment Authorization,” with USCIS within 30 days of receiving your recommendation.
+
+If USCIS approves you to work, they will send you a Form I-766, “Employment Authorization Document,” (EAD) with the dates that you may work off-campus.
+
+Please note that you cannot begin to work while the Form I-765 is pending with USCIS. As with on-campus employment, you must also apply for a SSN. Please see the F-1 Student Off-Campus resource page on ICE.gov for additional information.

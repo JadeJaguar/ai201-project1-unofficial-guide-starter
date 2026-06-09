@@ -1,0 +1,64 @@
+SOURCE: https://www.reddit.com/r/f1visa/comments/1mwuym7/leaving_the_us_advise_on_what_to_takekeep_and_do/
+FILENAME: reddit_leaving_us_advice.txt
+
+TITLE: Leaving the US - Advice on What to Take/Keep and Do Before Leaving
+Posted by u/helpleasexd | Aug 22, 2025
+
+ORIGINAL POST:
+I'm on OPT right now and while the end date isn't close yet, I've started thinking
+about what I should prepare before eventually leaving the U.S. I do see myself
+coming back in the future for higher education, maybe grad school.
+
+Questions I have:
+- SSN: Can we keep our SSN after leaving? Is it still usable for investing,
+  opening or maintaining bank accounts?
+- Bank accounts and credit history: Can we keep U.S. bank accounts open after
+  leaving? Can I continue growing my credit score while abroad?
+- Phone number: I've seen people mention porting their U.S. number to Google Voice.
+- Remote work: If I still have my SSN, could I legally use it for remote
+  opportunities with U.S. companies while living abroad?
+- Tax residency: Does that status reset once I leave and my student status ends?
+- Practical advice: What are some things you wish you had taken care of before
+  leaving, such as credit cards, mailing address, documents, or health records?
+
+---
+
+u/FeatherlyFly | 7 upvotes
+- You will keep your SSN. You cannot give it up even if you tried.
+- You do not need an SSN to work for a U.S. company from outside the U.S.
+- Due to tax and reporting laws, many U.S. banks and investment firms will not
+  allow people outside the U.S. to hold accounts. Some people do this anyway by
+  lying about where they live. This is fraud. The usual penalty is the bank closes
+  your account, often with significant delays where you lose access to your funds.
+- Google Voice has a U.S. residents-only policy. It is a policy, not a law.
+- Tax residency ends when you have a new residence, which in your case sounds like
+  as soon as you leave. You may owe state taxes for the part of the year you were
+  a resident.
+
+---
+
+u/No_Professional_6571 | 2 upvotes
+- SSN is for lifetime.
+- Check with your bank and credit card. You may need to inform them about
+  relocating and use a U.S. address, like a relative's, for billing.
+- Keeping a phone number is tricky. Depending on how long you will be away, you
+  could switch to a low cost provider (less than $200 per year). Some companies
+  also offer a parking service that holds your number while suspended.
+- You do not need a U.S. visa or SSN to work for U.S. companies from outside
+  the U.S.
+- Tax residency is calculated per year. Rules differ for federal and state. Unless
+  you are within the 5-year F1 visa exemption, you will most likely be a federal
+  tax resident for the current year and owe U.S. taxes on your entire worldwide
+  income for this year. Most states will let residency cease if you permanently
+  move out.
+- Services like PayPal and Venmo likely do not care much about where you are
+  physically. To be safe, take out your balance before you leave.
+
+---
+
+u/No_Professional_6571 | 1 upvote (follow up)
+The 5-year exemption is a one-time, lifetime count of five calendar years. It does
+not reset if you leave and re-enter the U.S. on a student visa. Leaving this year
+does not automatically make you a non-resident for the current year. It depends on
+when you leave and your period of stay in previous years. There are also separate
+residency rules for state and federal.

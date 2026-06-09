@@ -1,0 +1,81 @@
+SOURCE: https://ovis-intl.dartmouth.edu/immigration/f-1-students/f-1-visa-application-process
+FILENAME: visa_application_dartmouth.txt
+
+F-1 Students
+F-1 Visa Application Process
+Immigration Status
+The difference between U.S. immigration status and a visa stamp is an important and sometimes confusing concept. F-1 status can be extended, shortened or even changed to a different immigration status (such as the H-1B) while you are inside the U.S., yet your F-1 visa stamp does not have to match your immigration status while you are inside the United States.
+
+The visa stamp is only necessary for travel purposes. Initial entry and subsequent re-entry into the U.S. from abroad requires a valid visa corresponding to your particular immigration status at all times. However, you do not need to depart the U.S. if your visa stamp expires as long as your F-1 (or other) immigration status is still valid.
+
+The U.S. Department of State has more information about the visa application process, visa fee payments, and reasons for possible delays in the issuing of U.S. visas.
+
+Canadian citizens are not required to obtain a visa stamp from a U.S. consulate. Canadians are inspected at the U.S. border and admitted there in F-1 status
+
+Visa Appointment
+Do not schedule a visa appointment until you have received your Form I-20 from Dartmouth. Apply for the visa at the nearest U.S. consulate or embassy in your country with jurisdiction over your residence abroad. Appointment procedures and times vary from consulate to consulate, so check for details at the U.S. consulate where you will apply. The Department of State recently updated its policy to allow new F-1 students to apply for the F-1 visa stamp up to 365 days prior to the program start date on the Form I-20, but new students cannot enter the U.S. earlier than 30 days before that date.
+
+What to Bring to Your F-1 Visa Appointment
+The completed Form DS-160 from the appropriate U.S. consulate
+ 
+Form I-20, issued by Dartmouth College
+ 
+Your passport (valid for at least six months into the future)
+ 
+Proof (receipt) of the SEVIS fee payment
+ 
+Documentary evidence of the funding listed on your Form I-20
+ 
+Evidence of sufficient English language ability
+ 
+Evidence that you have strong personal, financial, academic and/or professional ties to your home country, and that you plan to return there after your U.S. program of study (non-immigrant intent). This evidence may include:
+ 
+A simple statement that you plan to leave the U.S. at the end of your program and return to your home country
+ 
+Evidence of property, real estate or land ownership in your home country
+ 
+Evidence of financial holdings in your home country
+ 
+Ownership of a car or other liquid assets
+ 
+Spouse, children or significant other family relatives in your home country
+ 
+Permanent employment offer in the home country
+ 
+Strong religious or civic ties to your local community
+ 
+Proof of acceptance to your Dartmouth degree program
+Fees
+There are two application fees for F-1 visas. There is a one-time SEVIS fee. A standard worldwide Machine Readable Visa (MRV).
+
+Depending on your own country's policy on fees for U.S. citizens, you may also have to pay a reciprocity fee. Depending on how far away the nearest U.S. consulate is from your home, you may also need to allow for additional travel and accommodation costs to get to your nearest consulate city.
+
+If Your Visa Expires
+Your F-1 status is valid as long as you are maintaining full-time enrollment and satisfactory progress in your degree program, even if your F-1 visa expires. You would only need to obtain a new, extended visa if you have plans to depart the U.S. for a visit abroad and re-enter the United States.
+
+You may legally remain in the U.S. if your F-1 visa has expired, without any negative consequences, as long as your F-1 status is still valid.
+
+Change of Status to F-1 Status
+Students have two possible options for acquiring F-1 status using the Form I-20:
+
+By applying for an F-1 visa stamp at a U.S. Consulate abroad and seeking admission to the U.S. with the visa stamp and Form I-20 (note Canadian citizens are exempt from the visa requirement); or,
+By filing an application for change of status with USCIS if already in the U.S. in a valid nonimmigrant status and not planning to travel outside the country. 
+Students considering an application for change of status must notify OVIS in order to request a Form I-20 issued for change of status instead of initial entry.  Applications for change of status are filed on Form I-539 with USCIS, and include a filing fee and supporting evidence including the Form I-20 and evidence of current, valid nonimmigrant status.  If the application is not approved by the program start date listed on the Form I-20, OVIS will need to defer the start date in the government's SEVIS database and issue an amended Form I-20.  Detailed information about eligibility for filing, required fees and supporting evidence can be found on the USCIS website as well as Study in the States. 
+
+Changes of status can take many months to be processed by USCIS, and international travel is prohibited when the application is filed and while it is pending.  There is the option to request premium (expedited) processing for an additional filing fee.  You should carefully consider whether international travel is the best option based on your personal situation, considering such factors as ability to travel, wait times at the U.S. consular post, and others.
+
+An application for change of status is a personal application and can impact immigration status, ability to travel, and eligibility for future immigration benefits.  OVIS is not authorized to provide legal advice to students and scholars who are considering filing an application to change status.  OVIS can provide referrals to immigration counsel for legal advice and risk assessment.
+
+Key Points to Keep in Mind
+If you are currently in B1/B2 status:
+
+Individuals in B1/B2 status are prohibited from "enrolling in a course of study" until after USCIS approves their change of status application.
+If you are currently in F-2 status:
+
+Individuals in F-2 status are eligible for part-time study.
+If you are currently in another nonimmigrant status (H-1B, J-1, L-1, E):
+
+If your current status allows full-time study in the U.S., you may start classes before your change of status application is approved. However, you are not authorized to engage in any employment permitted in F-1 status (on-campus employment, Curricular Practical Training) until the change of status application is approved.
+Traveling and Reentering the U.S.:
+
+If you obtain F-1 status through a change of status application you will not receive an F-1 visa stamp.  When you next travel outside the U.S. you must apply for an F-1 visa stamp at a U.S. consulate or embassy in order to reenter the U.S. in F-1 status.  Canadian citizens are exempt from the visa requirement.

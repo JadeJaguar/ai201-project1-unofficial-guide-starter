@@ -1,0 +1,20 @@
+SOURCE: https://ovis-intl.dartmouth.edu/immigration/f-1-students/employment/stem-optional-practical-training-opt/types-employment
+FILENAME: work_auth_dartmouth_stem_opt_types.txt
+
+F-1 Students
+
+Types of Employment
+Overview
+The STEM OPT employment must:
+
+Be directly related to your STEM degree field
+Be a minimum of 20 hours per week
+Be a bona fide employer-employee relationship, where employment is compensated in accordance with applicable labor State and federal labor laws
+Be working for an employer that is registered in E-Verify
+STEM OPT and Staffing Agencies or Third-Party Placements
+To qualify for STEM OPT, there must be a bona fide employer – employee relationship. USCIS has information on its STEM OPT webpage relating to training experiences that take place at a site other than the employer’s principal place of business. USCIS will review on a case-by-case basis whether a student is a bona fide employee of the employer signing the Form I-983 STEM OPT Training Plan, and whether the employer signing the Form I-983 is the same entity that employs the student and provides the practical training experience.
+
+OVIS recommends that students who are considering STEM OPT employment with a staffing or temporary agency consult with their OVIS advisor and the prospective employer regarding the STEM OPT requirements and USCIS guidance.
+
+Limitation on Unemployment
+The STEM OPT rules do not allow accrual of more than 150 days of unemployment for the entire OPT period, including both the initial period of post-completion OPT and the STEM OPT extension period.  You must report your STEM employment to OVIS so that it is updated in SEVIS. The SEVIS system counts days without reported employment as days of unemployment.  If you exceed the maximum number of unemployment days you will be considered out of status and risk the SEVIS system automatically terminating your F-1 SEVIS record.
