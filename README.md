@@ -2,6 +2,8 @@
 
 This is a question-answering system for international students on F-1 visas. You ask a plain question, like "can I work over winter break?" or "how many unemployment days do I get on OPT?", and you get an answer. The answer is built from a set of 53 real documents, and it tells you which ones it used.
 
+![alt text](UI.png)
+
 **Stack:** `all-MiniLM-L6-v2` for local embeddings, then ChromaDB as the vector store (cosine distance), then Groq `llama-3.3-70b-versatile` for the actual answer, then a Gradio UI.
 
 **Run it:**
@@ -158,7 +160,7 @@ I added three. All three run fully local (MiniLM embeddings and BM25 on the CPU)
 
 ### 1. Hybrid Search (BM25 + semantic)
 
-**What it does.** It adds a keyword search (BM25) over the same chunks and fuses it with the existing semantic search. The fusion is Reciprocal Rank Fusion (RRF): each method ranks the chunks, and a chunk's combined score is the sum of `1 / (60 + rank)` across both rankings. I used rank position instead of the raw scores because cosine distance (lower is better) and BM25 score (higher is better) live on totally different scales. RRF sidesteps that, so neither method can drown out the other. (Code is in `embed.py`: `semantic_search`, `bm25_search`, `hybrid_search`. The UI has a toggle, and hybrid is the default.)
+**What it does.** It adds a keyword search (BM25) over the same chunks and fuses it with the existing semantic search. The fusion is Reciprocal Rank Fusion (RRF): each method ranks the chunks, and a chunk's combined score is the sum of `1 / (60 + rank)` across both rankings. I used rank position instead of the raw scores because cosine distance (lower is better) and BM25 score (higher is better) live on totally different scales. RRF sidesteps that, so neither method can drown out the other. On top of plain RRF I pin each ranker's single best hit before filling the rest in fused order, so a landslide win in one method (BM25 nailing exact keywords the embedding misses) can't be buried by mediocre chunks that merely placed in both pools — without it, a chunk one ranker ranks #1 but the other never returns gets a single tiny RRF contribution and loses. (Code is in `embed.py`: `semantic_search`, `bm25_search`, `hybrid_search`. The UI exposes all three as a search-mode toggle — Hybrid (the default), Semantic only, and Keyword only (BM25) as a pure-keyword escape hatch.)
 
 **Why it fits.** The words that matter for Q4, like "Zolve", "Discover", and "credit card", are sitting right there in the Reddit chunks. Semantic search missed them because MiniLM doesn't link the casual phrase "building credit history" to that wording. BM25 matches the exact keywords, so it catches what the embedding model couldn't.
 
@@ -168,7 +170,7 @@ I added three. All three run fully local (MiniLM embeddings and BM25 on the CPU)
 |---|---|---|---|
 | Q1 (on-campus hours) | **#1** | **#1** | **#1** |
 | Q2 (grace period) | #11 | #8 | **#5** |
-| Q3 (STEM OPT reqs) | **#1** | **#3** | **#3** |
+| Q3 (STEM OPT reqs) | **#1** | **#3** | **#2** |
 | Q4 (credit history) | #9 | **#1** | **#1** |
 | Q5 (unemployment days) | **#1** | **#1** | **#1** |
 | **In top-5** | **3/5** | **4/5** | **5/5** |

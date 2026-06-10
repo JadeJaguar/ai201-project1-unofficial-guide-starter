@@ -29,7 +29,8 @@ SOURCE_CHOICES = [ALL_SOURCES, *SOURCE_GROUPS]
 # stronger retriever; "Semantic only" reproduces the original baseline.
 HYBRID_LABEL = "Hybrid (semantic + keyword)"
 SEMANTIC_LABEL = "Semantic only"
-METHOD_CHOICES = [HYBRID_LABEL, SEMANTIC_LABEL]
+BM25_LABEL = "Keyword only (BM25)"
+METHOD_CHOICES = [HYBRID_LABEL, SEMANTIC_LABEL, BM25_LABEL]
 
 # Example questions populate the input box only — they do NOT auto-run, so
 # they never spend an API call until the user actually clicks Ask.
@@ -121,7 +122,10 @@ def handle_query(question, source_choice, method_choice):
 
     # Map the UI controls onto retrieve()'s arguments.
     where = None if source_choice == ALL_SOURCES else {"source_group": source_choice}
-    method = "semantic" if method_choice == SEMANTIC_LABEL else "hybrid"
+    method = {
+        SEMANTIC_LABEL: "semantic",
+        BM25_LABEL: "bm25",
+    }.get(method_choice, "hybrid")
 
     # Phase 1 — retrieval (appears instantly on click).
     yield ("⏳ Searching the documents…", "_…_", "_…_", busy_btn)

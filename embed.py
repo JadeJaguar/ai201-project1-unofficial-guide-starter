@@ -314,6 +314,15 @@ def hybrid_search(query, k=DEFAULT_K, where=None, pool=HYBRID_POOL, rrf_k=RRF_K)
 
     Returned chunks carry whatever each ranker knew: `distance` from semantic
     (None if only BM25 found it), `bm25_score` from BM25, and `rrf_score`.
+
+    One guarantee on top of plain RRF: each ranker's single best hit is always
+    kept. RRF scores by rank and rewards chunks that appear in BOTH rankings, so
+    a chunk that one ranker nails at #1 but the other never returns gets a single
+    tiny contribution (1/(rrf_k+1)) and loses to mediocre chunks present in both
+    pools. That sinks exactly the case hybrid exists for — BM25 catching exact
+    keywords ("Zolve", "Discover", "credit card") on a query whose casual phrasing
+    the embedding maps elsewhere. Pinning each ranker's top-1 stops fusion from
+    burying a landslide win in either direction.
     """
     sem = semantic_search(query, k=pool, where=where)
     kw = bm25_search(query, k=pool, where=where)
@@ -338,7 +347,23 @@ def hybrid_search(query, k=DEFAULT_K, where=None, pool=HYBRID_POOL, rrf_k=RRF_K)
                 entry["bm25_score"] = c["bm25_score"]
 
     ordered = sorted(fused.values(), key=lambda e: e["rrf_score"], reverse=True)
-    return ordered[:k]
+
+    # Pin each ranker's #1 hit (BM25 first so a keyword landslide leads), then
+    # fill the remaining slots in RRF order, skipping anything already pinned.
+    result, seen = [], set()
+    for ranking in (kw, sem):
+        if ranking:
+            key = cid(ranking[0])
+            if key not in seen:
+                seen.add(key)
+                result.append(fused[key])
+    for c in ordered:
+        if len(result) >= k:
+            break
+        if cid(c) not in seen:
+            seen.add(cid(c))
+            result.append(c)
+    return result[:k]
 
 
 def retrieve(query, k=DEFAULT_K, where=None, method="semantic"):
