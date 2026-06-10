@@ -122,3 +122,37 @@ I'll use Claude (Claude Code) as my main AI tool. I'll check each stage's output
 - **What I'll give the AI:** the grounding rule (answer only from the retrieved context, and say "I don't have enough information on that" when the context isn't enough), the output format I want (the answer plus a list of cited `source_name`s), and the Gradio skeleton from the instructions.
 - **What I expect it to produce:** a prompt template that feeds the top-5 chunks in as context with a clear grounding instruction, a Groq `llama-3.3-70b-versatile` call that reads `GROQ_API_KEY` from `.env`, source attribution added in code (not left to the LLM to make up), and a Gradio UI that wires it all together.
 - **How I'll check it:** make sure an out-of-scope question triggers the refusal, that in-scope answers cite real retrieved sources, and that no answer leans on the model's general knowledge. I'll read the generated system prompt to make sure grounding is actually enforced, not just suggested.
+
+---
+
+## Stretch Features
+
+I'm doing three of these. All three run fully local (MiniLM embeddings and BM25 on the CPU), so none of them spend a Groq API call to build or test. That matters because my whole eval already runs on a tight Groq budget, and I want the comparisons to be repeatable without burning calls.
+
+The thread tying these together is my documented Q4 failure (the "building credit history" question). Semantic-only retrieval refused it, even though the answer is in the Reddit docs, because MiniLM couldn't link the phrase "building credit history" to the Reddit wording and the relevant chunks were long multi-topic posts. Two of these features attack that exact failure from two angles.
+
+### 1. Hybrid Search (BM25 + semantic)
+
+**What I'm building:** a keyword search (BM25) over the same chunks, fused with the existing semantic search, plus a comparison against semantic-only.
+
+**Why it fits this corpus:** the words that matter for Q4, like "Zolve", "Discover", and "credit card", are literally sitting in the Reddit chunks. Semantic search missed them. BM25 matches exact keywords, so it should pull those chunks up. This is the cleanest test of "would keyword search have saved the question my embedding model failed on?"
+
+**How I'll fuse the two:** Reciprocal Rank Fusion (RRF). Each method ranks the chunks, and a chunk's combined score is the sum of `1 / (60 + rank)` across both rankings. I picked RRF over adding the raw scores because cosine distance (lower is better) and BM25 score (higher is better) live on totally different scales. RRF only uses the rank position, so I don't have to normalize anything, and one method can't drown out the other.
+
+**How I'll know it worked:** I'll print the top-5 for semantic vs hybrid on all 5 eval questions and check where the Q4 credit chunks land in each. A pass is the credit chunks reaching the top-5 under hybrid when they didn't under semantic. (Script: `hybrid_compare.py`, no API calls.)
+
+### 2. Metadata Filtering
+
+**What I'm building:** a dropdown in the UI that limits retrieval to one kind of source, so a user can ask "what do the official rules say?" separately from "what do students say?".
+
+**Why it fits this corpus:** my whole domain pitch is that this knowledge lives in two worlds, the official rules and the practical student take. Filtering by source type makes that split usable. If a student only trusts government sources, they can cut out Reddit and blogs and see only official answers, with the citations to prove it.
+
+**How I'll build it:** the chunks already carry a `category`, but not a clean source type, so I'll add a coarse `source_group` field to each chunk's metadata when I build the index (derived from the `source_type` column in `document_inventory.csv`). The groups are: Official Government, University, Law firm, Student blog, Reddit, and YouTube. ChromaDB supports a `where` filter natively, so semantic search just passes the filter straight through. For BM25 and hybrid I filter the candidate chunks by the same field before ranking. Adding the field means a one-time local re-embed, which costs no API calls.
+
+### 3. Chunking Strategy Comparison
+
+**What I'm building:** a script that re-chunks the whole corpus at a few different sizes, embeds each version locally, and reports which one retrieves the right documents best on my eval questions.
+
+**Why I care:** in my failure analysis I claimed the cleanest fix for Q4 was chunking the Reddit listicles more finely, so each tip becomes its own focused chunk with a focused embedding. This feature actually tests that claim instead of just asserting it.
+
+**How I'll judge "better" without spending API calls:** I don't need the LLM for this. Each eval question has a known grounding source file (from the Evaluation Plan table above). For each chunking config I check, for each question, whether a chunk from the expected source file shows up in the top-5 and how good its distance is. The config that ranks the right sources higher (and especially the one that finally pulls the Q4 credit source into the top-5) wins. I'll compare at least my baseline (800/150) against a finer split (around 400/75) and a coarser one (around 1500/200), and write up which won and why. (Script: `chunk_compare.py`, uses an in-memory index so it never touches my real ChromaDB, no API calls.)

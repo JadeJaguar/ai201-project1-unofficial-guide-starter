@@ -21,11 +21,14 @@ Storage lives in chroma_db/ (gitignored). Delete that folder, or pass
 --rebuild, to force a clean re-embed.
 """
 
+import csv
 import json
+import re
 import sys
 from pathlib import Path
 
 import chromadb
+from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
 # ----------------------------------------------------------------------------
@@ -34,6 +37,7 @@ from sentence_transformers import SentenceTransformer
 ROOT = Path(__file__).resolve().parent
 CHUNKS_JSONL = ROOT / "chunks.jsonl"
 CHROMA_DIR = ROOT / "chroma_db"
+INVENTORY_CSV = ROOT / "document_inventory.csv"
 
 MODEL_NAME = "all-MiniLM-L6-v2"   # local, 384-dim, no API key (see planning.md)
 COLLECTION_NAME = "unofficial_guide"
@@ -45,12 +49,59 @@ METADATA_FIELDS = ("source_file", "source_name", "category", "chunk_index")
 # weak/off-topic one drifts toward 0.6+.
 DISTANCE_SPACE = "cosine"
 
+# ----------------------------------------------------------------------------
+# Stretch features: hybrid search + metadata filtering (see planning.md ->
+# Stretch Features). All of this is local; no extra API calls.
+# ----------------------------------------------------------------------------
+# Coarse source buckets for the metadata-filtering dropdown. The inventory's
+# raw source_type is granular (e.g. "University ISO guide (Dartmouth)"); we
+# fold it into these so a user can filter "official rules" vs "student take".
+SOURCE_GROUPS = (
+    "Official Government", "University", "Law firm",
+    "Student blog", "Reddit", "YouTube",
+)
+
+# Hybrid-search knobs. RRF fuses two rankings by rank position only, so cosine
+# distance (lower=better) and BM25 score (higher=better) never have to share a
+# scale. We pull POOL candidates from each ranker, then fuse.
+RRF_K = 60        # standard RRF damping constant
+HYBRID_POOL = 50  # how many candidates to pull from each ranker before fusing
+
+
+def source_group_for(source_type):
+    """Fold a granular inventory source_type into one coarse SOURCE_GROUPS bucket."""
+    st = (source_type or "").lower()
+    if st.startswith("official government"):
+        return "Official Government"
+    if st.startswith("university iso") or st.startswith("university handout"):
+        return "University"
+    if st.startswith("law firm"):
+        return "Law firm"
+    if st.startswith("student blog"):
+        return "Student blog"
+    if st.startswith("reddit"):
+        return "Reddit"
+    if st.startswith("youtube"):
+        return "YouTube"
+    return "Other"
+
+
+def load_source_types(csv_path):
+    """Return {filename: source_type} from the inventory CSV (for source_group)."""
+    mapping = {}
+    with open(csv_path, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            mapping[row["filename"]] = row["source_type"]
+    return mapping
+
 
 # ----------------------------------------------------------------------------
 # Shared resources (loaded once)
 # ----------------------------------------------------------------------------
 _model = None
 _collection = None
+_bm25 = None          # BM25Okapi index over all chunks (lazy)
+_bm25_chunks = None   # the chunk dicts BM25 was built over, same order
 
 
 def get_model():
@@ -59,6 +110,33 @@ def get_model():
     if _model is None:
         _model = SentenceTransformer(MODEL_NAME)
     return _model
+
+
+_TOKEN_RE = re.compile(r"[a-z0-9]+")
+
+
+def _tokenize(text):
+    """Lowercase word/number tokens — the same scheme for indexing and queries."""
+    return _TOKEN_RE.findall(text.lower())
+
+
+def get_bm25():
+    """Build (once) and return a BM25 index over chunks.jsonl plus the chunk list.
+
+    Local and cheap: BM25 is pure term statistics, no model and no API call.
+    The returned chunk list carries the same metadata as the Chroma records,
+    including the source_group we add at index-build time, so BM25/hybrid
+    results have the same shape as semantic ones.
+    """
+    global _bm25, _bm25_chunks
+    if _bm25 is None:
+        chunks = load_chunks(CHUNKS_JSONL)
+        inv = load_source_types(INVENTORY_CSV)
+        for c in chunks:
+            c["source_group"] = source_group_for(inv.get(c["source_file"], ""))
+        _bm25 = BM25Okapi([_tokenize(c["text"]) for c in chunks])
+        _bm25_chunks = chunks
+    return _bm25, _bm25_chunks
 
 
 def get_collection():
@@ -122,7 +200,17 @@ def build_index(rebuild=False):
     # ids: source_file + chunk_index is unique (chunk_index resets per file).
     ids = [f"{c['source_file']}::{c['chunk_index']}" for c in chunks]
     documents = [c["text"] for c in chunks]
-    metadatas = [{k: c[k] for k in METADATA_FIELDS} for c in chunks]
+
+    # Add the coarse source_group to each chunk's metadata so the UI can filter
+    # by source type (official vs student vs Reddit, etc.). Derived from the
+    # inventory's source_type column; this is why adding the filter needs one
+    # local re-embed (--rebuild), but it costs no API calls.
+    inv = load_source_types(INVENTORY_CSV)
+    metadatas = []
+    for c in chunks:
+        meta = {k: c[k] for k in METADATA_FIELDS}
+        meta["source_group"] = source_group_for(inv.get(c["source_file"], ""))
+        metadatas.append(meta)
 
     print(f"Embedding {len(documents)} chunks with {MODEL_NAME} ...")
     model = get_model()
@@ -144,13 +232,31 @@ def build_index(rebuild=False):
 # ----------------------------------------------------------------------------
 # 3. Retrieve
 # ----------------------------------------------------------------------------
-def retrieve(query, k=DEFAULT_K):
-    """Return the top-k chunks for a query.
+def _chroma_where(where):
+    """Translate a {field: value} filter into a Chroma `where` clause (or None)."""
+    if not where:
+        return None
+    # Single equality is the only filter the UI needs; Chroma wants $eq form.
+    return {field: {"$eq": value} for field, value in where.items()}
+
+
+def _matches(meta, where):
+    """True if a chunk's metadata satisfies a {field: value} equality filter."""
+    if not where:
+        return True
+    return all(meta.get(field) == value for field, value in where.items())
+
+
+def semantic_search(query, k=DEFAULT_K, where=None):
+    """Top-k chunks by embedding similarity (the original retrieval path).
+
+    `where` is an optional {field: value} metadata filter, e.g.
+    {"source_group": "Official Government"}, applied inside Chroma.
 
     Each result is a dict with:
         text      — the chunk text
         distance  — cosine distance (lower is closer; under ~0.5 is on-topic)
-        source_file, source_name, category, chunk_index — metadata
+        source_file, source_name, category, chunk_index, source_group — metadata
     """
     model = get_model()
     collection = get_collection()
@@ -159,6 +265,7 @@ def retrieve(query, k=DEFAULT_K):
     res = collection.query(
         query_embeddings=query_embedding,
         n_results=k,
+        where=_chroma_where(where),
     )
 
     results = []
@@ -168,6 +275,83 @@ def retrieve(query, k=DEFAULT_K):
     ):
         results.append({"text": doc, "distance": dist, **meta})
     return results
+
+
+def bm25_search(query, k=DEFAULT_K, where=None):
+    """Top-k chunks by BM25 keyword score (higher score = better match).
+
+    Local term-frequency search, no model and no API call. Good at exact
+    keywords semantic search can miss (e.g. "Zolve", "Discover", "I-983").
+    Results carry `bm25_score` and `distance=None` (BM25 has no distance).
+    """
+    bm25, chunks = get_bm25()
+    scores = bm25.get_scores(_tokenize(query))
+    ranked = sorted(range(len(chunks)), key=lambda i: scores[i], reverse=True)
+
+    results = []
+    for i in ranked:
+        if not _matches(chunks[i], where):
+            continue
+        c = chunks[i]
+        results.append({
+            "text": c["text"], "distance": None, "bm25_score": float(scores[i]),
+            "source_file": c["source_file"], "source_name": c["source_name"],
+            "category": c["category"], "chunk_index": c["chunk_index"],
+            "source_group": c.get("source_group", "Other"),
+        })
+        if len(results) >= k:
+            break
+    return results
+
+
+def hybrid_search(query, k=DEFAULT_K, where=None, pool=HYBRID_POOL, rrf_k=RRF_K):
+    """Fuse semantic and BM25 rankings with Reciprocal Rank Fusion.
+
+    Each chunk's score is sum(1 / (rrf_k + rank)) over the two rankings, where
+    rank is its 1-based position in that ranker's top `pool` (a chunk missing
+    from a ranker contributes nothing for it). Using rank instead of raw score
+    means cosine distance and BM25 score never have to share a scale.
+
+    Returned chunks carry whatever each ranker knew: `distance` from semantic
+    (None if only BM25 found it), `bm25_score` from BM25, and `rrf_score`.
+    """
+    sem = semantic_search(query, k=pool, where=where)
+    kw = bm25_search(query, k=pool, where=where)
+
+    def cid(c):  # stable id shared by both rankers
+        return f"{c['source_file']}::{c['chunk_index']}"
+
+    # Merge both rankers into one record per chunk: keep the base fields, carry
+    # distance from semantic and bm25_score from BM25, and sum the RRF scores.
+    fused = {}
+    for ranking in (sem, kw):
+        for rank, c in enumerate(ranking, start=1):
+            key = cid(c)
+            entry = fused.get(key)
+            if entry is None:
+                entry = {**c, "rrf_score": 0.0}
+                fused[key] = entry
+            entry["rrf_score"] += 1.0 / (rrf_k + rank)
+            if c.get("distance") is not None:
+                entry["distance"] = c["distance"]
+            if c.get("bm25_score") is not None:
+                entry["bm25_score"] = c["bm25_score"]
+
+    ordered = sorted(fused.values(), key=lambda e: e["rrf_score"], reverse=True)
+    return ordered[:k]
+
+
+def retrieve(query, k=DEFAULT_K, where=None, method="semantic"):
+    """Dispatch to a search method. Default stays "semantic" so the Milestone 4-6
+    behavior and the documented evaluation reproduce exactly; pass method="hybrid"
+    (or "bm25") for the stretch-feature paths. `where` is an optional metadata
+    filter, e.g. {"source_group": "Reddit"}.
+    """
+    if method == "hybrid":
+        return hybrid_search(query, k=k, where=where)
+    if method == "bm25":
+        return bm25_search(query, k=k, where=where)
+    return semantic_search(query, k=k, where=where)
 
 
 # ----------------------------------------------------------------------------

@@ -1,0 +1,167 @@
+/* The Unofficial Guide — travel-themed UI styles for app.py.
+   Loaded by app.py and passed to Gradio. Pure CSS, no external image,
+   works offline (only an optional Google Fonts import). */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Sky-to-sand gradient background with soft cloud glows */
+.gradio-container, body {
+    background:
+        radial-gradient(900px 380px at 12% -8%, rgba(255,255,255,0.85), transparent 60%),
+        radial-gradient(700px 320px at 88% 4%, rgba(255,255,255,0.55), transparent 55%),
+        linear-gradient(180deg, #8fd3f4 0%, #b8e6f7 28%, #dff3fb 55%, #fdf3e3 100%)
+        fixed !important;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    min-height: 100vh;
+}
+
+/* Centered frosted-glass card holding the whole app */
+.guide-card {
+    max-width: 880px !important;
+    margin: 28px auto !important;
+    padding: 36px 40px 40px !important;
+    /* Near-opaque white instead of a translucent + blurred card. backdrop-filter
+       (like transform/filter) on an ancestor becomes the containing block for
+       the dropdown's popup, which makes the options list land offset below the
+       field instead of anchored to it. Dropping the blur fixes that. */
+    background: rgba(255, 255, 255, 0.94) !important;
+    border: 1px solid rgba(255, 255, 255, 0.95) !important;
+    border-radius: 26px !important;
+    box-shadow: 0 18px 50px rgba(31, 81, 120, 0.22) !important;
+}
+
+/* Header */
+.guide-header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.guide-header .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f5178;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+.guide-header .subtitle {
+    font-size: 1rem;
+    color: #4a6b85;
+    margin: 8px auto 0;
+    max-width: 620px;
+    line-height: 1.55;
+}
+.guide-header .ticket-strip {
+    margin: 18px auto 4px;
+    width: 70%;
+    border: none;
+    border-top: 2px dashed #b9d4e6;
+}
+
+/* Section labels (✈️ Answer, etc.) */
+.section-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2f7ab0;
+    margin: 22px 0 8px 2px;
+}
+
+/* Answer / sources / passages cards */
+.answer-box, .sources-box, .passages-box {
+    border-radius: 16px !important;
+    padding: 18px 22px !important;
+    box-shadow: 0 4px 16px rgba(31, 81, 120, 0.10) !important;
+    line-height: 1.65 !important;
+    color: #243b4a !important;
+}
+/* Answer = sky blue */
+.answer-box {
+    background: #e8f3fb !important;
+    border-left: 5px solid #2f7ab0 !important;
+    font-size: 1.02rem;
+}
+/* Retrieved from (sources) = warm sand */
+.sources-box {
+    background: #fdf2e1 !important;
+    border-left: 5px solid #e0a458 !important;
+    font-size: 0.95rem;
+}
+/* Retrieved passages = soft slate/lavender */
+.passages-box {
+    background: #eef0f8 !important;
+    border-left: 5px solid #7e8db5 !important;
+}
+.answer-box p, .sources-box p, .passages-box p { margin: 0.4em 0; }
+.answer-box ol, .answer-box ul { margin: 0.4em 0 0.4em 1.2em; }
+.answer-box li { margin: 0.25em 0; }
+.passages-box blockquote {
+    border-left: 3px solid #cfe2ef;
+    margin: 0.5em 0;
+    padding-left: 12px;
+    color: #4a6b85;
+}
+
+/* Input controls: each gets its own tinted panel + colored left border so the
+   question box, source filter, and search mode are easy to tell apart instead
+   of being three white boxes in a row. */
+.field {
+    border-radius: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #b9d4e6 !important;
+    box-shadow: 0 3px 12px rgba(31, 81, 120, 0.08) !important;
+}
+.field label span {
+    font-weight: 600 !important;
+    color: #1f5178 !important;
+}
+/* Question = sky blue */
+.q-field {
+    background: #e8f3fb !important;
+    border-left-color: #2f7ab0 !important;
+}
+/* Source filter = warm sand */
+.filter-field {
+    background: #fdf2e1 !important;
+    border-left-color: #e0a458 !important;
+}
+/* Search mode = soft teal */
+.mode-field {
+    background: #e6f5ef !important;
+    border-left-color: #3aa17e !important;
+}
+/* The selected radio option ("Hybrid…") defaults to the theme's dark accent,
+   which is too heavy here. Repaint it a light teal that matches the panel. */
+.mode-field label.selected {
+    background: #bfe6d6 !important;
+    border-color: #3aa17e !important;
+    color: #14503c !important;
+    box-shadow: none !important;
+}
+/* Keep the actual editable fields readable (white) inside the tinted panels. */
+.field textarea, .field input, .field .wrap-inner {
+    background: #ffffff !important;
+    border-radius: 10px !important;
+}
+
+/* Dropdown popup: make sure the options list overlays clearly, anchored under
+   the field, with a white background and a strong shadow so it reads as one
+   menu (not floating mystery text). */
+.filter-field .options, ul.options {
+    background: #ffffff !important;
+    border: 1px solid #e0a458 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 12px 34px rgba(31, 81, 120, 0.28) !important;
+    z-index: 1000 !important;
+    overflow: hidden !important;
+}
+ul.options .item:hover, ul.options .item.selected {
+    background: #fdf2e1 !important;
+}
+
+/* Primary Ask button */
+button.primary {
+    background: linear-gradient(135deg, #2f7ab0, #1f5178) !important;
+    border: none !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px;
+}

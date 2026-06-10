@@ -1,0 +1,183 @@
+
+##############################################################################
+# PLANNING.MD EVALUATION QUESTIONS (Q1-Q5)
+##############################################################################
+
+==============================================================================
+Q1: How many hours per week can an F-1 student work on campus while school is in session?
+------------------------------------------------------------------------------
+ANSWER:
+An F-1 student can work up to 20 hours per week on campus while school is in session.
+
+SOURCES:
+  - Official Government (ICE/SEVIS), Work Auth
+  - University ISO guide (UCSB), Maintaining Status
+  - Student blog/3rd-party (InternationalStudent.com), Work Auth
+  - University ISO guide (Dartmouth), Work Auth
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.176  src=Official Government (ICE/SEVIS), Work Auth (work_auth_ice_sevis.txt)
+      - How many hours may an F-1 student work with authorization for off-campus employment? Hours an F-1 student may work for off-campus employment Description Number of hours While school is in session 20 hours per week or fewer During the F-1 student's annual bre ...
+  [2] dist=0.253  src=University ISO guide (UCSB), Maintaining Status (maintaining_status_ucsb.txt)
+      Employment F-1 students may work on-campus part-time (no more than 20 hours per week) while school is in session and full-time during school vacations. Off-campus employment (paid or unpaid) is not permitted during the first academic year in most cases. After  ...
+  [3] dist=0.267  src=Student blog/3rd-party (InternationalStudent.com), Work Auth (work_auth_internationalstudent_working.txt)
+      For on-campus work, an F1 student is subject to the following rules:  You must maintain valid F1 status You can work up to 20 hours per week while school is in session You can work full-time on campus during holidays and vacation periods if you intend to regis ...
+  [4] dist=0.267  src=Official Government (ICE/SEVIS), Work Auth (work_auth_ice_sevis.txt)
+      - Must an F-1 student wait one academic year before starting to work on campus? No.  - May an F-1 student work at more than one on-campus job? Yes. However, the F-1 student's total work hours for all jobs cannot exceed 20 hours during the school term. The F-1  ...
+  [5] dist=0.268  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_oncampus.txt)
+      F-1 Students On-Campus Employment On-campus employment is employment that occurs on the premises of Dartmouth College for a Dartmouth College paycheck or other remuneration (lodging, meals, etc.). To be eligible for on-campus employment, students must be enrol ...
+
+==============================================================================
+Q2: What is the grace period for an F-1 student after they complete their program?
+------------------------------------------------------------------------------
+ANSWER:
+The 60-day "grace" period after graduation or post-completion OPT is for an F-1 student to prepare to leave the United States, unless the student is beginning a new program of study.
+
+SOURCES:
+  - Official Government (ICE/SEVIS), Work Auth
+  - University ISO guide (Dartmouth), Maintaining Status
+  - Law firm guide, Maintaining Status
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.282  src=Official Government (ICE/SEVIS), Work Auth (work_auth_ice_sevis.txt)
+      - Must an F-1 student wait one academic year before starting to work on campus? No.  - May an F-1 student work at more than one on-campus job? Yes. However, the F-1 student's total work hours for all jobs cannot exceed 20 hours during the school term. The F-1  ...
+  [2] dist=0.342  src=University ISO guide (Dartmouth), Maintaining Status (maintaining_status_program_completion.txt)
+      F-1 Students F-1 Program Completion The immigration regulations require the SEVIS program end date for F-1 students, which is reflected on the Form I-20, to be the date that the student completes all requirements for the degree. For undergraduate and most mast ...
+  [3] dist=0.345  src=University ISO guide (Dartmouth), Maintaining Status (maintaining_status_program_completion.txt)
+      If the defense occurs between terms, the latest program end date is the day before the new term begins. Doctoral students must continue to receive funding up to the program end date on the Form I-20. Note that in cases other than an unconditional pass, a stude ...
+  [4] dist=0.351  src=Law firm guide, Maintaining Status (maintaining_status_buchalter_law.txt)
+      Requirements to maintain F-1 Status: Be a bona fide student qualified to pursue a full course * of study and enrolled at a Student and Exchange Visitor Program (SEVP) certified school. *For an undergraduate student, a full course is an enrollment in at least 1 ...
+  [5] dist=0.357  src=University ISO guide (Dartmouth), Maintaining Status (maintaining_status_program_completion.txt)
+      The final program end date marks the last day of F-1 "on-campus employment". F-1 students are not authorized to work for Dartmouth College pursuant to on-campus employment after the program end date, and are not eligible to work for any employer until they hav ...
+
+==============================================================================
+Q3: What are the requirements to qualify for the STEM OPT 24-month extension?
+------------------------------------------------------------------------------
+ANSWER:
+To qualify for the STEM OPT 24-month extension, the requirements are: 
+
+1. Maintain valid F-1 status
+2. Be in a valid period of post-completion OPT
+3. Have a degree in a field listed on the STEM Designated Degree Program List
+4. Have an offer of employment from an employer enrolled in the E-Verify program
+5. Have employment that is directly related to your STEM degree field
+6. Have a Form I-983 Training Plan completed and signed by you and your STEM OPT employer
+
+Additionally, if the STEM degree was previously obtained, the following requirements apply:
+1. Both degrees were received from accredited and SEVP-certified institutions in the United States
+2. The STEM-eligible degree was conferred within 10 years of the STEM OPT extension application
+3. You haven't already been granted a STEM OPT extension based on the previous degree
+4. Your employment is directly related to the STEM degree.
+
+SOURCES:
+  - University ISO guide (Dartmouth), Work Auth
+  - Student blog/3rd-party (StudentSucceed), Work Auth
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.269  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_about.txt)
+      Eligibility To be eligible for the STEM OPT extension, you must:  Maintain valid F-1 status  Be in a valid period of post-completion OPT  Have a degree in a field listed on the STEM Designated Degree Program List (you can find the code assigned to your major l ...
+  [2] dist=0.297  src=Student blog/3rd-party (StudentSucceed), Work Auth (work_auth_opt_vs_cpt_student_guide.txt)
+      4. What if I'm a STEM student? If your degree is in a STEM field, you may qualify for a 24-month OPT extension, which gives you up to three years of work experience in the U.S. This is huge because it buys you more time to build your career and potentially tra ...
+  [3] dist=0.301  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_about.txt)
+      F-1 Students About STEM Optional Practical Training (OPT) Overview F-1 students with degrees in certain Science, Technology, Engineering and Math (STEM) fields may be eligible for a 24-month extension of the initial period of post-completion OPT.  The Departme ...
+  [4] dist=0.310  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_reporting.txt)
+      12 and 24-Month STEM Reporting and Self-Evaluation In addition to the standard OPT participation reporting you are required to do at each six-month reporting mark, you are required to submit the OPT self-evaluation from the Form I-983 STEM OPT Training Plan at ...
+  [5] dist=0.326  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_about.txt)
+      Have a Form I-983 Training Plan completed and signed by you and your STEM OPT employer  File (submitted and received by USCIS) your Form I-765 application before your current OPT expires Eligibility Based on a Previously Obtained STEM Degree If you are current ...
+
+==============================================================================
+Q4: What do students recommend doing to start building credit history as a new international student?
+------------------------------------------------------------------------------
+ANSWER:
+I don't have enough information on that.
+
+SOURCES:
+  (none — refused / out of scope)
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.589  src=Student blog/3rd-party (StudentSucceed), Work Auth (work_auth_opt_vs_cpt_student_guide.txt)
+      That's when I started digging, asking my DSO endless questions, and learning from other international students. What I realized is this: understanding OPT and CPT early on can make or break your student experience. So here's my breakdown, in plain English, wit ...
+  [2] dist=0.592  src=Student blog/3rd-party (ISOA), Oncampus Jobs (oncampus_jobs_isoa.txt)
+      Skill development: Gain transferable skills in communication, time management, and problem-solving. Networking opportunities: Build connections with faculty, staff, and peers which can benefit your career in the long term. Financial support: While on-campus jo ...
+  [3] dist=0.593  src=Student blog/3rd-party (InternationalStudentLoan.com), Work Auth (work_auth_internationalstudentloan.txt)
+      In order to work for an international organization, the employment must be in your field of study, you must be in good academic standing, and you must have held valid F-1 status for at least one academic year. You will have to apply for an EAD before you may b ...
+  [4] dist=0.597  src=Official Government (USCIS), Work Auth (work_auth_uscis.txt)
+      You must be enrolled in an "academic" educational program, a language-training program, or a vocational program Your school must be approved by the Student and Exchange Visitors Program, Immigration & Customs Enforcement You must be enrolled as a full-time stu ...
+  [5] dist=0.598  src=Student blog/3rd-party (Interstride), Oncampus Jobs (oncampus_jobs_interstride.txt)
+      Interstride tip! Find on-campus and off-campus jobs that are open to hiring international students through Interstride's platform. Interstride is tailored for international students in the US. Whether you are an undergraduate or graduate student, you can find  ...
+
+==============================================================================
+Q5: What is the total number of unemployment days allowed across regular OPT and the STEM OPT extension combined, and how is that split between regular OPT and the STEM extension?
+------------------------------------------------------------------------------
+ANSWER:
+The total number of unemployment days allowed is 150 days for the entire OPT period, including both the initial period of post-completion OPT and the STEM OPT extension period. The breakdown of this total between regular OPT and the STEM OPT extension is not specified.
+
+SOURCES:
+  - University ISO guide (Dartmouth), Work Auth
+  - Student blog/3rd-party (StudentSucceed), Work Auth
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.323  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_types.txt)
+      OVIS recommends that students who are considering STEM OPT employment with a staffing or temporary agency consult with their OVIS advisor and the prospective employer regarding the STEM OPT requirements and USCIS guidance.  Limitation on Unemployment The STEM  ...
+  [2] dist=0.402  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_about.txt)
+      You haven't already been granted a STEM OPT extension based on the previous degree  Your employment is directly related to the STEM degree  Your employer meets the STEM OPT employer requirements Volunteer work and unpaid internships on STEM OPT Unpaid or volun ...
+  [3] dist=0.415  src=Student blog/3rd-party (StudentSucceed), Work Auth (work_auth_opt_vs_cpt_student_guide.txt)
+      4. What if I'm a STEM student? If your degree is in a STEM field, you may qualify for a 24-month OPT extension, which gives you up to three years of work experience in the U.S. This is huge because it buys you more time to build your career and potentially tra ...
+  [4] dist=0.418  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_about.txt)
+      Eligibility To be eligible for the STEM OPT extension, you must:  Maintain valid F-1 status  Be in a valid period of post-completion OPT  Have a degree in a field listed on the STEM Designated Degree Program List (you can find the code assigned to your major l ...
+  [5] dist=0.430  src=University ISO guide (Dartmouth), Work Auth (work_auth_dartmouth_stem_opt_reporting.txt)
+      12 and 24-Month STEM Reporting and Self-Evaluation In addition to the standard OPT participation reporting you are required to do at each six-month reporting mark, you are required to submit the OPT self-evaluation from the Form I-983 STEM OPT Training Plan at ...
+
+##############################################################################
+# FAILURE-CASE CANDIDATES (scrambled PDF table)
+##############################################################################
+
+==============================================================================
+F1: How many hours per week can a J-1 student work on campus, and what is academic training (AT) and its overall time limit?
+------------------------------------------------------------------------------
+ANSWER:
+I don't have enough information on that.
+
+SOURCES:
+  (none — refused / out of scope)
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.365  src=University handout (PDF), Work Auth (Employment-Options-Handout-Merged.pdf)
+      On-Campus Employment Students may work 20 Students may work 20 hours/ hours/week while enrolled week while enrolled full-time, Examples include: RA/TA full-time, and more than 20 and more than 20 hours positions, library, IMA, hours between quarters and betwee ...
+  [2] dist=0.374  src=Student blog/3rd-party (Shorelight), Oncampus Jobs (oncampus_jobs_shorelight.txt)
+      Additionally, some of these roles may not be flexible around your class schedule and can be challenging to balance with your study load. However, off-campus jobs usually make up for their increased responsibilities by providing higher pay and their wide variet ...
+  [3] dist=0.408  src=Official Government (ICE/SEVIS), Work Auth (work_auth_ice_sevis.txt)
+      - How many hours may an F-1 student work with authorization for off-campus employment? Hours an F-1 student may work for off-campus employment Description Number of hours While school is in session 20 hours per week or fewer During the F-1 student's annual bre ...
+  [4] dist=0.416  src=University ISO guide (UW), Oncampus Jobs (oncampus_jobs_uw.txt)
+      Time Limits You are allowed to work:  part-time (20 hours per week or less) during your regular full-time quarters (quarter dates are set by the UW academic calendar and include finals week). full-time (more than 20 hours per week) between quarters. full-time  ...
+  [5] dist=0.424  src=University ISO guide (UW-Madison), Maintaining Status (maintaining_status_uw_madison.txt)
+      Enroll full-time each fall and spring semester Full-time enrollment is required for all international students. In general, full-time is 12 credits for undergraduates and 8 credits for graduate students. Summer semester is optional, except for international st ...
+
+==============================================================================
+F2: According to the university employment options handout, what are the limitations on using CPT, and can using full-time CPT affect my OPT eligibility?
+------------------------------------------------------------------------------
+ANSWER:
+According to the passages, the limitations on using CPT include: 
+1. You must have a job offer before applying for CPT employment.
+2. The work must be directly related to your field of study.
+3. You must have been enrolled in school full-time for a year under valid F-1 status.
+4. You can only work for the specific employer and for the specific dates authorized.
+5. While in school, you can only be approved for part-time CPT (20 hours per week or less).
+
+Using full-time CPT for 12 months or more can affect your OPT eligibility, making you ineligible for OPT. However, working part-time on CPT or full-time on CPT for less than 12 months does not affect your OPT eligibility.
+
+SOURCES:
+  - Student blog/3rd-party (InternationalStudent.com), Work Auth
+  - Student blog/3rd-party (InternationalStudentLoan.com), Work Auth
+
+RETRIEVED CHUNKS (text trimmed):
+  [1] dist=0.252  src=Student blog/3rd-party (InternationalStudent.com), Work Auth (work_auth_internationalstudent_working.txt)
+      Advantages of this type of employment when compared to CPT or OPT: Employment does not have to be for-credit nor required for your degree program. Regardless of how much or how long you work, this type of employment will not take away from your 12-month post-c ...
+  [2] dist=0.257  src=Student blog/3rd-party (InternationalStudent.com), Work Auth (work_auth_internationalstudent_working.txt)
+      Regardless of whether you are approved for full or part-time on CPT, there is no limit to how long you can work. However, if you work full-time on CPT for 12 months or more, you are not eligible for OPT. If you work part-time on CPT, or full-time on CPT for le ...
+  [3] dist=0.272  src=Student blog/3rd-party (InternationalStudentLoan.com), Work Auth (work_auth_internationalstudentloan.txt)
+      Once you've received CPT authorization from your International Student Office, you may only work for your specific employer and for the period of time authorized. Your CPT authorization will stipulate whether you may work part-time or full-time; you may only b ...
+  [4] dist=0.281  src=Student blog/3rd-party (InternationalStudentLoan.com), Work Auth (work_auth_internationalstudentloan.txt)
+      As with OPT, the work you do under CPT must be directly related to your field of study. Unlike with OPT, however, you must have received a job offer before you may apply for CPT employment. You must also have been enrolled in school full-time for a year under  ...
+  [5] dist=0.288  src=Student blog/3rd-party (InternationalStudent.com), Work Auth (work_auth_internationalstudent_working.txt)
+      Your job offer must be in your major or field of study Your International Student Office must authorize you for CPT. Once you receive CPT authorization, you can only work for the specific employer and for the specific dates authorized (unlike with OPT or sever ...

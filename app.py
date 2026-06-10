@@ -14,10 +14,22 @@ and clicking example questions (which only fill the box) costs nothing
 against the Groq API.
 """
 
+from pathlib import Path
+
 import gradio as gr
 
-from embed import retrieve
+from embed import retrieve, SOURCE_GROUPS
 from query import generate
+
+# Metadata-filtering dropdown choices. "All sources" means no filter.
+ALL_SOURCES = "All sources"
+SOURCE_CHOICES = [ALL_SOURCES, *SOURCE_GROUPS]
+
+# Search-mode toggle. Hybrid (semantic + BM25) is the default because it's the
+# stronger retriever; "Semantic only" reproduces the original baseline.
+HYBRID_LABEL = "Hybrid (semantic + keyword)"
+SEMANTIC_LABEL = "Semantic only"
+METHOD_CHOICES = [HYBRID_LABEL, SEMANTIC_LABEL]
 
 # Example questions populate the input box only — they do NOT auto-run, so
 # they never spend an API call until the user actually clicks Ask.
@@ -30,105 +42,11 @@ EXAMPLE_QUESTIONS = [
 ]
 
 # ----------------------------------------------------------------------------
-# Travel-themed styling (pure CSS — no external image, works offline)
+# Travel-themed styling. The CSS lives in styles.css (alongside this file) and
+# is read in here so Gradio still receives it as a string — same wiring as
+# before, just kept in its own file instead of a big inline literal.
 # ----------------------------------------------------------------------------
-CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-/* Sky-to-sand gradient background with soft cloud glows */
-.gradio-container, body {
-    background:
-        radial-gradient(900px 380px at 12% -8%, rgba(255,255,255,0.85), transparent 60%),
-        radial-gradient(700px 320px at 88% 4%, rgba(255,255,255,0.55), transparent 55%),
-        linear-gradient(180deg, #8fd3f4 0%, #b8e6f7 28%, #dff3fb 55%, #fdf3e3 100%)
-        fixed !important;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-    min-height: 100vh;
-}
-
-/* Centered frosted-glass card holding the whole app */
-.guide-card {
-    max-width: 880px !important;
-    margin: 28px auto !important;
-    padding: 36px 40px 40px !important;
-    background: rgba(255, 255, 255, 0.78) !important;
-    border: 1px solid rgba(255, 255, 255, 0.9) !important;
-    border-radius: 26px !important;
-    box-shadow: 0 18px 50px rgba(31, 81, 120, 0.22) !important;
-    backdrop-filter: blur(10px);
-}
-
-/* Header */
-.guide-header {
-    text-align: center;
-    margin-bottom: 8px;
-}
-.guide-header .title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #1f5178;
-    margin: 0;
-    letter-spacing: -0.5px;
-}
-.guide-header .subtitle {
-    font-size: 1rem;
-    color: #4a6b85;
-    margin: 8px auto 0;
-    max-width: 620px;
-    line-height: 1.55;
-}
-.guide-header .ticket-strip {
-    margin: 18px auto 4px;
-    width: 70%;
-    border: none;
-    border-top: 2px dashed #b9d4e6;
-}
-
-/* Section labels (✈️ Answer, etc.) */
-.section-label {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #2f7ab0;
-    margin: 22px 0 8px 2px;
-}
-
-/* Answer / sources / passages cards */
-.answer-box, .sources-box, .passages-box {
-    background: #ffffff !important;
-    border-radius: 16px !important;
-    padding: 18px 22px !important;
-    box-shadow: 0 4px 16px rgba(31, 81, 120, 0.10) !important;
-    line-height: 1.65 !important;
-    color: #243b4a !important;
-}
-.answer-box {
-    border-left: 5px solid #2f7ab0 !important;
-    font-size: 1.02rem;
-}
-.sources-box {
-    border-left: 5px solid #e0a458 !important;
-    font-size: 0.95rem;
-}
-.answer-box p, .sources-box p, .passages-box p { margin: 0.4em 0; }
-.answer-box ol, .answer-box ul { margin: 0.4em 0 0.4em 1.2em; }
-.answer-box li { margin: 0.25em 0; }
-.passages-box blockquote {
-    border-left: 3px solid #cfe2ef;
-    margin: 0.5em 0;
-    padding-left: 12px;
-    color: #4a6b85;
-}
-
-/* Primary Ask button */
-button.primary {
-    background: linear-gradient(135deg, #2f7ab0, #1f5178) !important;
-    border: none !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.3px;
-}
-"""
+CSS = (Path(__file__).resolve().parent / "styles.css").read_text(encoding="utf-8")
 
 HEADER_HTML = """
 <div class="guide-header">
@@ -146,6 +64,22 @@ HEADER_HTML = """
 PLACEHOLDER_ANSWER = "_Ask a question above and your grounded answer will land here._ 🛬"
 
 
+def _score_label(c):
+    """Readable score line for a chunk under any search method.
+
+    Semantic chunks have a cosine distance; BM25-only chunks don't (distance is
+    None). Hybrid chunks may carry both plus an RRF score. Show what we have.
+    """
+    parts = []
+    if c.get("distance") is not None:
+        parts.append(f"distance `{c['distance']:.3f}`")
+    if c.get("bm25_score") is not None:
+        parts.append(f"bm25 `{c['bm25_score']:.2f}`")
+    if c.get("rrf_score") is not None:
+        parts.append(f"rrf `{c['rrf_score']:.4f}`")
+    return " &nbsp;·&nbsp; ".join(parts) if parts else "_no score_"
+
+
 def format_passages(chunks):
     """Render retrieved chunks as readable markdown for the details panel."""
     if not chunks:
@@ -154,7 +88,7 @@ def format_passages(chunks):
     for i, c in enumerate(chunks, start=1):
         text = c["text"].strip()
         blocks.append(
-            f"**Passage {i}** &nbsp;·&nbsp; distance `{c['distance']:.3f}`  \n"
+            f"**Passage {i}** &nbsp;·&nbsp; {_score_label(c)}  \n"
             f"*Source: {c['source_name']}* (`{c['source_file']}`)\n\n"
             f"> {text}"
         )
@@ -165,13 +99,17 @@ SOURCES_PLACEHOLDER = "_Sources will be listed here._"
 PASSAGES_PLACEHOLDER = "_Retrieved passages will appear here._"
 
 
-def handle_query(question):
+def handle_query(question, source_choice, method_choice):
     """Two-phase generator: yields interim status, then the final result.
 
     Each yield is (answer, sources, passages, ask_button_update). Yielding an
     interim state the moment the user clicks gives instant feedback even
     though the Groq call takes a few seconds, and disabling the button while
     we work prevents a double-click from firing a second API call.
+
+    source_choice / method_choice come from the metadata-filter dropdown and
+    the search-mode toggle (stretch features). They only change retrieval, so
+    they still cost zero extra API calls.
     """
     busy_btn = gr.update(value="Searching…", interactive=False)
     idle_btn = gr.update(value="Ask ✈️", interactive=True)
@@ -181,9 +119,13 @@ def handle_query(question):
                PASSAGES_PLACEHOLDER, idle_btn)
         return
 
+    # Map the UI controls onto retrieve()'s arguments.
+    where = None if source_choice == ALL_SOURCES else {"source_group": source_choice}
+    method = "semantic" if method_choice == SEMANTIC_LABEL else "hybrid"
+
     # Phase 1 — retrieval (appears instantly on click).
     yield ("⏳ Searching the documents…", "_…_", "_…_", busy_btn)
-    chunks = retrieve(question)
+    chunks = retrieve(question, where=where, method=method)
 
     # Phase 2 — generation.
     yield (f"🔎 Found {len(chunks)} relevant passages. ✈️ Writing a grounded "
@@ -207,7 +149,26 @@ with gr.Blocks(title="The Unofficial Guide") as demo:
             label="Your question",
             placeholder="e.g. How many hours can I work on campus during the term?",
             autofocus=True,
+            elem_classes="field q-field",
         )
+
+        # Stretch-feature controls: limit which sources answer, and pick the
+        # retriever. Both only affect retrieval, so they spend no extra API call.
+        with gr.Row():
+            source_dd = gr.Dropdown(
+                choices=SOURCE_CHOICES,
+                value=ALL_SOURCES,
+                label="📂 Limit to source type",
+                scale=1,
+                elem_classes="field filter-field",
+            )
+            method_radio = gr.Radio(
+                choices=METHOD_CHOICES,
+                value=HYBRID_LABEL,
+                label="🔀 Search mode",
+                scale=1,
+                elem_classes="field mode-field",
+            )
 
         with gr.Row():
             ask_btn = gr.Button("Ask ✈️", variant="primary", scale=2)
@@ -232,18 +193,20 @@ with gr.Blocks(title="The Unofficial Guide") as demo:
     # Smoothly scroll down to the Answer section the moment a query fires, so
     # the user isn't left looking at the top of the page while it works.
     # NOTE: a js handler's return value replaces the Python fn's inputs, so it
-    # must take the question and return it unchanged — otherwise the input
-    # arrives as null and every query looks empty.
+    # must take ALL inputs and return them unchanged — otherwise any input it
+    # drops arrives as null (the question would look empty, the filter/mode
+    # would reset). We now have three inputs, so pass all three straight back.
     scroll_js = (
-        "(question) => { setTimeout(() => { const el = "
+        "(question, source, method) => { setTimeout(() => { const el = "
         "document.getElementById('answer-anchor'); if (el) { "
         "el.scrollIntoView({behavior: 'smooth', block: 'start'}); } }, 100); "
-        "return question; }"
+        "return [question, source, method]; }"
     )
 
+    inputs = [inp, source_dd, method_radio]
     outputs = [answer, sources, passages, ask_btn]
-    ask_btn.click(handle_query, inputs=inp, outputs=outputs, js=scroll_js)
-    inp.submit(handle_query, inputs=inp, outputs=outputs, js=scroll_js)
+    ask_btn.click(handle_query, inputs=inputs, outputs=outputs, js=scroll_js)
+    inp.submit(handle_query, inputs=inputs, outputs=outputs, js=scroll_js)
     clear_btn.click(
         lambda: ("", PLACEHOLDER_ANSWER, SOURCES_PLACEHOLDER, PASSAGES_PLACEHOLDER),
         outputs=[inp, answer, sources, passages],
